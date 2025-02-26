@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  26 FEB 2025 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  26 FEB 2025 17:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -960,12 +960,6 @@ LaTeX Font Info:    Trying to load font information for T1+ppl on input line 152
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (./template.aux
 
-LaTeX Warning: Label `fig:TimeGAN Generation of Lost Circulation Time Series Data' multiply defined.
-
-
-LaTeX Warning: Label `fig:TimeGAN Generation of Lost Circulation Time Series Data@cref' multiply defined.
-
-
 LaTeX Warning: Label `fig:PCA and TSNE visualisation results of generated data versus raw data' multiply defined.
 
 
@@ -1336,9 +1330,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <图片/5级小波分解.png, id=199, 958.3303pt x 812.66109pt>
 File: 图片/5级小波分解.png Graphic file (type png)
 <use 图片/5级小波分解.png>
-Package pdftex.def Info: 图片/5级小波分解.png  used on input line 303.
+Package pdftex.def Info: 图片/5级小波分解.png  used on input line 305.
 (pdftex.def)             Requested size: 295.76642pt x 250.80632pt.
-<图片/spearman相关系数.png, id=200, 598.089pt x 441.066pt>
+<图片/spearman相关系数.png, id=201, 598.089pt x 441.066pt>
 File: 图片/spearman相关系数.png Graphic file (type png)
 <use 图片/spearman相关系数.png>
 Package pdftex.def Info: 图片/spearman相关系数.png  used on input line 314.
@@ -1355,12 +1349,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [8 <./图片/5级小波分解.png (PNG copy)>]
-<图片/timeGan数据生成.png, id=206, 1213.15735pt x 769.37437pt>
+<图片/timeGan数据生成.png, id=210, 1213.15735pt x 769.37437pt>
 File: 图片/timeGan数据生成.png Graphic file (type png)
 <use 图片/timeGan数据生成.png>
 Package pdftex.def Info: 图片/timeGan数据生成.png  used on input line 327.
 (pdftex.def)             Requested size: 295.76642pt x 187.5768pt.
-<图片/pca tsne.png, id=207, 918.43124pt x 536.0025pt>
+<图片/pca tsne.png, id=211, 918.43124pt x 536.0025pt>
 File: 图片/pca tsne.png Graphic file (type png)
 <use 图片/pca tsne.png>
 Package pdftex.def Info: 图片/pca tsne.png  used on input line 337.
@@ -1393,7 +1387,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [11]
-<图片/特征增强.png, id=230, 504.138pt x 326.967pt>
+<图片/特征增强.png, id=232, 504.138pt x 326.967pt>
 File: 图片/特征增强.png Graphic file (type png)
 <use 图片/特征增强.png>
 Package pdftex.def Info: 图片/特征增强.png  used on input line 444.
@@ -1407,12 +1401,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [12 <./图片/特征增强.png>]
-<图片/数据扩充.png, id=237, 458.586pt x 313.827pt>
+<图片/数据扩充.png, id=239, 458.586pt x 313.827pt>
 File: 图片/数据扩充.png Graphic file (type png)
 <use 图片/数据扩充.png>
 Package pdftex.def Info: 图片/数据扩充.png  used on input line 455.
 (pdftex.def)             Requested size: 295.76642pt x 202.40967pt.
-<图片/综合图像.png, id=239, 866.364pt x 322.149pt>
+<图片/综合图像.png, id=241, 866.364pt x 322.149pt>
 File: 图片/综合图像.png Graphic file (type png)
 <use 图片/综合图像.png>
 Package pdftex.def Info: 图片/综合图像.png  used on input line 468.
@@ -1468,18 +1462,18 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 18236A7A2A6B050299D7DC9590EEDEC5;4094.
  ) 
 Here is how much of TeX's memory you used:
- 33957 strings out of 476023
- 637228 string characters out of 5790926
+ 33955 strings out of 476023
+ 637043 string characters out of 5790926
  1960190 words of memory out of 5000000
- 55006 multiletter control sequences out of 15000+600000
+ 55004 multiletter control sequences out of 15000+600000
  630400 words of font info for 386 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  123i,13n,126p,2552b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (15 pages, 4955870 bytes).
+Output written on template.pdf (15 pages, 4956055 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
+ 329 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
  75 named destinations out of 1000 (max. 500000)
  95496 words of extra memory for PDF output out of 106986 (max. 10000000)
 

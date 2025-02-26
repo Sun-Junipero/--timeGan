@@ -284,7 +284,7 @@ where x is the data sample, \({{x}_{scale}}\) is the normalised value of \({{x}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Sample construction}
 
-In this study, the sliding window method is used to construct fixed-length  lost circulation time series samples, as shown in Figure\ref{fig:Time series sample construction based on sliding window method} . Under the premise of maximising the use of data, the window sliding step is set to 1, and the window length can be adjusted according to the modelling effect. In order to ensure that the sample has effective features, the window length is usually not less than 30 data points.
+In this study, the sliding window method is used to construct fixed-length  lost circulation time series samples, as shown in Figure. \ref{fig:Time series sample construction based on sliding window method} . Under the premise of maximising the use of data, the window sliding step is set to 1, and the window length can be adjusted according to the modelling effect. In order to ensure that the sample has effective features, the window length is usually not less than 30 data points.
 
 \begin{figure}[h]
     \centering
@@ -298,6 +298,8 @@ In this study, the sliding window method is used to construct fixed-length  lost
 
 The key factors of the wavelet transform effect are the number of wavelet decomposition layers and the type of wavelet function, and the selection of appropriate parameters can significantly improve the transform effect. According to the characteristics of the lost circulation time series data, this study adopts Haar wavelet function to transform the original feature signal, and sets the number of decomposition layers to 5. Taking SPP as an example, the result after its reconstruction with 5 levels of decomposition is shown in Fig.  \ref{fig:Haar five-level wavelet decomposition reconstruction for SPPs}, where the low-frequency approximate features are similar to the original features, while the high-frequency detail features (d1~d5) show different degrees of oscillation characteristics.
 
+Among the high-frequency detail features, the oscillation frequencies of d1 and d2 are higher, but the difference is not obvious, and the oscillation patterns of d4 and d5 exhibit excessive discreteness, rendering them inadequate for effectively capturing the continuous variations that occur before and after the onset of lost circulation. In contrast, d3 achieves a better balance between signal continuity and amplitude fluctuation characteristics, and is able to more clearly characterise the data fluctuations before and after the lost circulation. Therefore, the 3-level wavelet decomposition is the most effective.
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/5级小波分解.png}
@@ -305,14 +307,12 @@ The key factors of the wavelet transform effect are the number of wavelet decomp
     \label{fig:Haar five-level wavelet decomposition reconstruction for SPPs}
 \end{figure}
 
-Among the high-frequency detail features, the oscillation frequencies of d1 and d2 are higher but the difference is not obvious, and the oscillation patterns of d4 and d5 are too discrete to effectively describe the continuous changes before and after the lost circulation occurs. In contrast, d3 achieves a better balance between signal continuity and amplitude fluctuation characteristics, and is able to more clearly characterise the data fluctuations before and after the lost circulation. Therefore, the 3-level wavelet decomposition is the most effective.
-
-After wavelet transforming the seven  lost circulation time series features, the correlation between the new features and the  lost circulation labels is analysed by the correlation coefficient method, and the results are shown in Figure  \label{fig:Sperman correlation coefficients of features before and after wavelet transformation}. Although the Spearman correlation coefficients of the new features have decreased, the transformed features of Hook load, SPP, TPIT and MFO are still strongly correlated with the lost circulation risk labels, and these four features are finally selected as the effective enhancement features of the lost circulation risk .
+After wavelet transforming the seven  lost circulation time series features, the correlation between the new features and the  lost circulation labels is analysed by the correlation coefficient method, and the results are shown in Figure  \ref{fig:Spearman correlation coefficients of features before and after wavelet transformation}. Although the Spearman correlation coefficients of the new features have decreased, the transformed features of Hook load, SPP, TPIT and MFO are still strongly correlated with the lost circulation risk labels, and these four features are finally selected as the effective enhancement features of the lost circulation risk .
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/spearman相关系数.png}
-    \caption{Spearman correlation coefficients of features before and after wavelet transformation}
+    \caption{Spearman correlation coefficients of specific features (e.g., SPP, MFO) before and after wavelet transformation}
     \label{fig:Spearman correlation coefficients of features before and after wavelet transformation}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -320,7 +320,7 @@ After wavelet transforming the seven  lost circulation time series features, the
 
 In order to ascertain the efficacy of the TimeGAN model in the generation of lost circulation time-series data, this study utilises a training set comprising over 4,700 lost circulation time-series data points from the previously constructed lost circulation recording time-series dataset. In order to meet the input format requirements of the TimeGAN model, the lost circulation time-series data are initially constructed into fixed-window time-series samples using the sliding-window method and subsequently normalised. 
 
-The TimeGAN network constructed in this study generated the lost circulation time series data after 20,000 iterations. The comparison of the generated results with the real samples is shown in Figure   \label{fig:TimeGAN Generation of Lost Circulation Time Series Data}, where the horizontal axis is the time step and the vertical axis is the normalised values of the feature parameters. While the generated data are numerically distinct from the actual data, they exhibit a certain degree of time series correlation. 
+The TimeGAN network constructed in this study generated the lost circulation time series data after 20,000 iterations. The comparison of the generated results with the real samples is shown in Figure   \ref{fig:TimeGAN Generation of Lost Circulation Time Series Data}, where the horizontal axis is the time step and the vertical axis is the normalised values of the feature parameters. While the generated data are numerically distinct from the actual data, they exhibit a certain degree of time series correlation. 
 
 \begin{figure}[h]
     \centering
