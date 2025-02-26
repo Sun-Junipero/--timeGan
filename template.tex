@@ -98,7 +98,7 @@ $^{2}$ \quad School of Petroleum Engineering, China University of Petroleum, Bei
 
 %\conference{} % An extended version of a conference paper
 % Abstract (Do not insert blank lines, i.e. \\) 
-\abstract{The issue of lost circulation represents a significant challenge in drilling, given its potential to impede both safety and efficiency.    The traditional monitoring model is hindered by the presence of noise and the complexity of temporal fluctuations in lost circulation data, resulting in suboptimal performance with regard to accuracy and generalisation ability.    This, in turn, complicates the adaptation of the model to diverse working conditions.   To address these limitations, this paper proposes a multi-scale feature fusion model based on wavelet transform and TimeGAN.    Wavelet transform enhances the features of time series data, while TimeGAN (Time Series Generative Adversarial Network) excels in generating realistic time series and augmenting scarce or missing data.    This model leverages convolutional network feature extraction and integrates features via a multi-scale feature fusion module to investigate correlations among different features.   Consequently, it effectively mitigates the overfitting issue caused by limited drilling loss samples.  The experimental findings demonstrate that the multi-scale feature fusion model proposed in this paper enhances the accuracy by 8.8\% , reduces the leakage rate and false alarm rate by 12.4\%  and 6.2\% , respectively, and attains a test set accuracy of 93.8\%  and an accuracy of 95.1\%  in the lost circulation identification task in comparison to the unoptimized model.    The method outlined in this paper provides reliable technical support for the monitoring of lost circulation risk, thereby contributing to the enhancement of safety and efficiency in the drilling process.}
+\abstract{The issue of lost circulation represents a significant challenge in drilling, given its potential to impede both safety and efficiency.    The traditional monitoring model is hindered by the presence of noise and the complexity of temporal fluctuations in lost circulation data, resulting in suboptimal performance with regard to accuracy and generalisation ability.    This, in turn, complicates the adaptation of the model to diverse working conditions.   To address these limitations, this study proposes a multi-scale feature fusion model based on wavelet transform and TimeGAN.    Wavelet transform enhances the features of time series data, while TimeGAN (Time Series Generative Adversarial Network) excels in generating realistic time series and augmenting scarce or missing data.    This model leverages convolutional network feature extraction and integrates features via a multi-scale feature fusion module to investigate correlations among different features.   Consequently, it effectively mitigates the overfitting issue caused by limited drilling loss samples.  The experimental findings demonstrate that the multi-scale feature fusion model proposed in this study enhances the accuracy by 8.8\% , reduces the leakage rate and false alarm rate by 12.4\%  and 6.2\% , respectively, and attains a test set accuracy of 93.8\%  and an accuracy of 95.1\%  in the lost circulation identification task in comparison to the unoptimized model.    The method outlined in this study provides reliable technical support for the monitoring of lost circulation risk, thereby contributing to the enhancement of safety and efficiency in the drilling process.}
 
 % Keywords
 \keyword{Wavelet transform; TimeGAN; multi-scale feature fusion;  lost circulation risk} 
@@ -119,7 +119,7 @@ $^{2}$ \quad School of Petroleum Engineering, China University of Petroleum, Bei
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Only for the journal Data
-%\dataset{DOI number or link to the deposited data set if the data set is published separately. If the data set shall be published as a supplement to this paper, this field will be filled by the journal editors. In this case, please submit the data set as a supplement.}
+%\dataset{DOI number or link to the deposited data set if the data set is published separately. If the data set shall be published as a supplement to this study, this field will be filled by the journal editors. In this case, please submit the data set as a supplement.}
 %\datasetlicense{License under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -264,7 +264,7 @@ The method is particularly well-suited to non-normally distributed data.The form
 Where,\({{r}_{s}}\) is the final Spearman correlation coefficient value taken by the two variables,\(n\) is the number of data in the variable, and  \(d_{i}^{2}\) is the square of the difference in the rank order of the data of the two variables.
 
 
-In this paper, the Spearman correlation coefficient between each characteristic parameter and the lost circulation label is calculated, and the results are shown in Fig.  \ref{fig:Characteristic correlation coefficient calculation results}
+In this study, the Spearman correlation coefficient between each characteristic parameter and the lost circulation label is calculated, and the results are shown in Fig.  \ref{fig:Characteristic correlation coefficient calculation results}
 
 \begin{figure}[h]
     \centering
@@ -278,13 +278,13 @@ Following a thorough examination of the available domain knowledge, in conjuncti
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Data cleaning}
 
-In this paper, time series data from 13 wells from a real drilling site are utilised, with a data acquisition interval of 5 seconds, and a total of more than 300,000 normal data and more than 5,000 lost circulation data. The raw data contains anomalies and missing values. In order to screen the abnormal values, this paper adopts the improved sliding window 3 \(\sigma\) method and sets the appropriate window size to avoid misjudging the normal data. The outliers are replaced with null values, which are subsequently filled by spline interpolation to preserve the overall trend of the data. The data were smoothed and filtered using the average of the current point and the previous 99 points to smooth each data point, with the aim of reducing noise and improving data quality. Finally, the maximum-minimum normalisation method was used to dimensionless the data, with the intention of shortening the model training time and reducing overfitting. The relevant formula (9) is as follows:
+This study uses time series data from 13 wells in real drilling sites of offshore oil fields in China, with a data acquisition interval of 5 seconds, totaling over 300,000 normal data points and more than 5,000 lost circulation data points.The raw data contains anomalies and missing values. In order to screen the abnormal values, this study adopts the improved sliding window 3 \(\sigma\) method and sets the appropriate window size to avoid misjudging the normal data. The outliers are replaced with null values, which are subsequently filled by spline interpolation to preserve the overall trend of the data. The data were smoothed and filtered using the average of the current point and the previous 99 points to smooth each data point, with the aim of reducing noise and improving data quality. Finally, the maximum-minimum normalisation method was used to dimensionless the data, with the intention of shortening the model training time and reducing overfitting. The relevant formula (9) is as follows:
 $$ x _ { s c a l e } = \frac { x - x _ { m i n } } { x _ { m a x } - x _ { m i n } }\quad (9)$$
 where x is the data sample, \({{x}_{scale}}\) is the normalised value of \({{x}}\) , and \({{x}_{max}}\)  and \({{x}_{min}}\)  are the maximum and minimum values of the variable \({{x}}\)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Sample construction}
 
-In this paper, the sliding window method is used to construct fixed-length  lost circulation time series samples, as shown in Figure\ref{fig:Time series sample construction based on sliding window method} . Under the premise of maximising the use of data, the window sliding step is set to 1, and the window length can be adjusted according to the modelling effect. In order to ensure that the sample has effective features, the window length is usually not less than 30 data points.
+In this study, the sliding window method is used to construct fixed-length  lost circulation time series samples, as shown in Figure\ref{fig:Time series sample construction based on sliding window method} . Under the premise of maximising the use of data, the window sliding step is set to 1, and the window length can be adjusted according to the modelling effect. In order to ensure that the sample has effective features, the window length is usually not less than 30 data points.
 
 \begin{figure}[h]
     \centering
@@ -296,7 +296,7 @@ In this paper, the sliding window method is used to construct fixed-length  lost
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Wavelet transform based temporal feature enhancement}
 
-The key factors of the wavelet transform effect are the number of wavelet decomposition layers and the type of wavelet function, and the selection of appropriate parameters can significantly improve the transform effect. According to the characteristics of the lost circulation time series data, this paper adopts Haar wavelet function to transform the original feature signal, and sets the number of decomposition layers to 5. Taking SPP as an example, the result after its reconstruction with 5 levels of decomposition is shown in Fig  \label{fig:Haar five-level wavelet decomposition reconstruction for SPPs}, where the low-frequency approximate features are similar to the original features, while the high-frequency detail features (d1~d5) show different degrees of oscillation characteristics.
+The key factors of the wavelet transform effect are the number of wavelet decomposition layers and the type of wavelet function, and the selection of appropriate parameters can significantly improve the transform effect. According to the characteristics of the lost circulation time series data, this study adopts Haar wavelet function to transform the original feature signal, and sets the number of decomposition layers to 5. Taking SPP as an example, the result after its reconstruction with 5 levels of decomposition is shown in Fig  \label{fig:Haar five-level wavelet decomposition reconstruction for SPPs}, where the low-frequency approximate features are similar to the original features, while the high-frequency detail features (d1~d5) show different degrees of oscillation characteristics.
 
 \begin{figure}[h]
     \centering
@@ -318,9 +318,9 @@ After wavelet transforming the seven  lost circulation time series features, the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{TimeGAN-based temporal data expansion}
 
-In order to ascertain the efficacy of the TimeGAN model in the generation of lost circulation time-series data, this paper utilises a training set comprising over 4,700 lost circulation time-series data points from the previously constructed lost circulation recording time-series dataset. In order to meet the input format requirements of the TimeGAN model, the lost circulation time-series data are initially constructed into fixed-window time-series samples using the sliding-window method and subsequently normalised. 
+In order to ascertain the efficacy of the TimeGAN model in the generation of lost circulation time-series data, this study utilises a training set comprising over 4,700 lost circulation time-series data points from the previously constructed lost circulation recording time-series dataset. In order to meet the input format requirements of the TimeGAN model, the lost circulation time-series data are initially constructed into fixed-window time-series samples using the sliding-window method and subsequently normalised. 
 
-The TimeGAN network constructed in this paper generated the lost circulation time series data after 20,000 iterations. The comparison of the generated results with the real samples is shown in Figure   \label{fig:TimeGAN Generation of Lost Circulation Time Series Data}, where the horizontal axis is the time step and the vertical axis is the normalised values of the feature parameters. While the generated data are numerically distinct from the actual data, they exhibit a certain degree of time series correlation. 
+The TimeGAN network constructed in this study generated the lost circulation time series data after 20,000 iterations. The comparison of the generated results with the real samples is shown in Figure   \label{fig:TimeGAN Generation of Lost Circulation Time Series Data}, where the horizontal axis is the time step and the vertical axis is the normalised values of the feature parameters. While the generated data are numerically distinct from the actual data, they exhibit a certain degree of time series correlation. 
 
 \begin{figure}[h]
     \centering
@@ -345,7 +345,7 @@ The results subsequent to PCA and t-SNE dimensionality reduction are demonstrate
 \section{Model Construction}
 \subsection{Evaluation metrics}
 
-A significant aspect of employing machine learning methodologies to address engineering challenges is the assessment of algorithmic models' efficacy. This paper employs four evaluation metrics (i.e. Accuracy, Recall, Missing Alarm and False Alarm\cite{SunW2023}) to evaluate the performance of diverse models in identifying lost circulation risk \cite{ZZY2024}. The calculation formulae for each evaluation index are delineated in Table 1 and the subsequent equation.
+A significant aspect of employing machine learning methodologies to address engineering challenges is the assessment of algorithmic models' efficacy. this study employs four evaluation metrics (i.e. Accuracy, Recall, Missing Alarm and False Alarm\cite{SunW2023}) to evaluate the performance of diverse models in identifying lost circulation risk \cite{ZZY2024}. The calculation formulae for each evaluation index are delineated in Table 1 and the subsequent equation.
 
 \begin{table}[h]
 \centering
@@ -375,13 +375,13 @@ In a classification model, \textbf{accuracy} represents the proportion of correc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Parameter setting }
 
-In order to ascertain the efficacy of the TimeGAN model in the generation of lost circulation time-series data, this paper utilises a dataset comprising over 4,700 instances of lost circulation time-series data, as previously constructed from the time-series dataset of lost circulation recordings. In order to satisfy the input requirements of the TimeGAN model, the well-loss time-series data are initially configured as time-series samples with fixed window intervals, employing the sliding window method and normalised.
+In order to ascertain the efficacy of the TimeGAN model in the generation of lost circulation time-series data, this study utilises a dataset comprising over 4,700 instances of lost circulation time-series data, as previously constructed from the time-series dataset of lost circulation recordings. In order to satisfy the input requirements of the TimeGAN model, the well-loss time-series data are initially configured as time-series samples with fixed window intervals, employing the sliding window method and normalised.
 
 \subsection{Hyper-parameter optimisation}
 
 In the context of training a model of this nature, there are two primary types of hyperparameter that demand attention: training hyperparameters and structural hyperparameters. The former primarily govern the model's training process, while the latter determine its structural design. 
 
-Given the vast number of hyperparameters and the wide range of values they can assume, this paper employs the open-source library Optuna for the optimisation of hyperparameters. This library is a specialised open-source toolkit developed for the optimisation of hyperparameters in deep learning models. It is capable of automatically searching for the optimal hyperparameter configurations within the hyperparameter space by using Bayesian optimisation and genetic algorithms, among other methods. It is notable for its simplicity and ease of use, coupled with a high degree of flexibility, and its compatibility with mainstream deep learning models such as PyTorch and TensorFlow, TensorFlow, and other mainstream deep learning platforms.
+Given the vast number of hyperparameters and the wide range of values they can assume, this study employs the open-source library Optuna for the optimisation of hyperparameters. This library is a specialised open-source toolkit developed for the optimisation of hyperparameters in deep learning models. It is capable of automatically searching for the optimal hyperparameter configurations within the hyperparameter space by using Bayesian optimisation and genetic algorithms, among other methods. It is notable for its simplicity and ease of use, coupled with a high degree of flexibility, and its compatibility with mainstream deep learning models such as PyTorch and TensorFlow, TensorFlow, and other mainstream deep learning platforms.
 
 In the experiment, the native TimeGAN network in the ydata-synthetic library based on the Python language is utilised to construct the data expansion generation model, and the primary parameter settings of the model are exhibited in Table \label{TimeGAN parameter settings}.
 
@@ -421,7 +421,7 @@ The true value is denoted by \({ y } _ { i } \), the model prediction by \(\wide
 Where, \({y}_{i}\) denotes the true label, and \({\hat{y}}_{i}\) denotes the probability value predicted by the model.
 
 \({L}_{reg
-}\): Regularisation Loss, which is employed to constrain the complexity of the model and enhance the feature selection capability, is given by: In this paper, L1 regularisation is employed, and its formula is:
+}\): Regularisation Loss, which is employed to constrain the complexity of the model and enhance the feature selection capability, is given by: In this study, L1 regularisation is employed, and its formula is:
 $$ L _ { r e g } = | | w | | _ { 1 } = \sum _ { j = 1 } ^ { d } | w _ { j } |\quad (17)$$
 
 \(w\), The weight vector of the model, \(d\), is the dimension of the model parameters.
@@ -461,7 +461,7 @@ As shown in the figure    \label{fig:Analysis of the effect of data expansion} ,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Analysis of integrated optimisation effect and multi-scale feature fusion effect}
 
-In the context of the original dataset, which exhibits a loss of circulation, both the feature enhancement method and the data expansion method have been shown to enhance the performance of the model. However, it has been demonstrated that the data expansion method exerts a more substantial influence on the model's performance in comparison to the feature enhancement method. In this paper, the two aforementioned methods are fused with multi-scale features, and the effect of multi-scale feature fusion optimisation on model performance is compared with that of individual optimisation, as shown in Figure \label{fig:Comprehensive optimisation effect analysis}. The findings reveal that multi-scale feature fusion optimisation surpasses individual optimisation, attaining an accuracy rate of 93.8\%, a precision rate of 95.1\%, a recall rate of 92.2\%, and leakage and false alarm rates of 7.6\% and 4.8\%, respectively. Following the multi-scale feature fusion, the accuracy and precision of the model have been evidently enhanced in comparison with the unoptimised tandem model. The accuracy has been augmented by 8.8\%, the precision by 6.1\%, the recall by 12.2\%, and the leakage rate by 12.4\%, whilst the false alarm rate has been diminished by 6.2\%.
+In the context of the original dataset, which exhibits a loss of circulation, both the feature enhancement method and the data expansion method have been shown to enhance the performance of the model. However, it has been demonstrated that the data expansion method exerts a more substantial influence on the model's performance in comparison to the feature enhancement method. In this study, the two aforementioned methods are fused with multi-scale features, and the effect of multi-scale feature fusion optimisation on model performance is compared with that of individual optimisation, as shown in Figure \label{fig:Comprehensive optimisation effect analysis}. The findings reveal that multi-scale feature fusion optimisation surpasses individual optimisation, attaining an accuracy rate of 93.8\%, a precision rate of 95.1\%, a recall rate of 92.2\%, and leakage and false alarm rates of 7.6\% and 4.8\%, respectively. Following the multi-scale feature fusion, the accuracy and precision of the model have been evidently enhanced in comparison with the unoptimised tandem model. The accuracy has been augmented by 8.8\%, the precision by 6.1\%, the recall by 12.2\%, and the leakage rate by 12.4\%, whilst the false alarm rate has been diminished by 6.2\%.
 
 \begin{figure}[h]
     \centering

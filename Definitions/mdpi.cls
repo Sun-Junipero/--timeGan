@@ -1005,7 +1005,7 @@
 	}%
 	{%
 	\ifthenelse{\equal{\@conference}{\@empty}}{}{%
-	\hang$^{\dagger}$ \tabto{\dist} This paper is an extended version of our paper published in\space \@conference.}
+	\hang$^{\dagger}$ \tabto{\dist} this study is an extended version of our paper published in\space \@conference.}
 	\par
 	}%
 	{%
@@ -1586,7 +1586,7 @@
 		\st{. {\changeurlcolor{black}%
 		\href{https://doi.org/\@doinum}%
 		{https://doi.org/\@doinum}}}%
-		\\This paper has been retracted. A retraction notice was published on \@retractiondate{} %
+		\\this study has been retracted. A retraction notice was published on \@retractiondate{} %
 		in \textit{\@journalfull} \textbf{\@retractionnoticeyear}, \textit{\@retractionnoticevolume}, \@retractionnoticeidnumber. https://doi.org/\@retractionnoticedoi
 	}%
 	\fancyfoot[R]{
