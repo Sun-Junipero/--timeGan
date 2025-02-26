@@ -1,0 +1,67 @@
+\begin{thebibliography}{999}
+
+\bibitem[Menghan(2016)]{simeng2016}
+Menghan, S.
+\newblock Research on Real-Time Early Warning Method for Drilling Kick.
+\newblock Master's thesis, Southwest Petroleum University,  2016.
+
+\bibitem[Biao et~al.(2019)Biao, Zhenxiao, Shuanggui, Jun, Guohua, and Hongbin]{liubiao2019}
+Biao, L.; Zhenxiao, L.; Shuanggui, L.; Jun, T.; Guohua, W.; Hongbin, L.
+\newblock Lost Circulation Prediction Based on Support Vector Regression.
+\newblock {\em Drilling Production Technology} {\bf 2019}, {\em 42},~17--20+1--2.
+
+\bibitem[Yan et~al.(2023)Yan, Mubai, and Hao]{yandan2023}
+Yan, Y.; Mubai, D.; Hao, H.
+\newblock Research on Drilling Risk Early Warning Technology Based on Trendline Method.
+\newblock {\em Drilling Production Technology} {\bf 2023}, {\em 46},~170--174.
+
+\bibitem[Zhuo et~al.(2023)Zhuo, Zhichao, Bo, Pengfei, Changfang, and Tong]{zhengzhuo2023}
+Zhuo, Z.; Zhichao, S.; Bo, C.; Pengfei, H.; Changfang, J.; Tong, X.
+\newblock Research on Lost Circulation Early Warning Model Based on XGBoost Algorithm.
+\newblock {\em Petrochemical Applications} {\bf 2023}, {\em 42},~112--115.
+
+\bibitem[Weifeng et~al.(2023)Weifeng, Saisai, Dezhi, Weihua, Kai, and Yongshou]{sunweifeng2023}
+Weifeng, S.; Saisai, B.; Dezhi, Z.; Weihua, L.; Kai, L.; Yongshou, D.
+\newblock Intelligent Monitoring Method for Micro-Loss of Drilling Fluid Based on DCC-LSTM.
+\newblock {\em Natural Gas Industry} {\bf 2023}, {\em 43},~141--148.
+
+\bibitem[Grossmann and Morlet(1984)]{Grossmann1984}
+Grossmann, A.; Morlet, J.
+\newblock Decomposition of Hardy Functions into Square Integrable Wavelets of Constant Shape.
+\newblock {\em SIAM Journal on Mathematical Analysis} {\bf 1984}, {\em 15},~723--736.
+\newblock {\url{https://doi.org/10.1137/0515056}}.
+
+\bibitem[Yoon et~al.(2019)Yoon, Jarrett, and van~der Schaar]{Yoon2019}
+Yoon, J.; Jarrett, D.; van~der Schaar, M., Time-series generative adversarial networks.
+\newblock In {\em Proceedings of the 33rd International Conference on Neural Information Processing Systems}; Curran Associates Inc.: Red Hook, NY, USA,  2019.
+
+\bibitem[Hongyu et~al.(2023)Hongyu, Zhiwen, Maoguo, Yue, Zhou, Yuzhou, and Yang]{zhaohongyu2023}
+Hongyu, Z.; Zhiwen, Z.; Maoguo, G.; Yue, W.; Zhou, Y.; Yuzhou, L.; Yang, Z.
+\newblock Drone Detection in Radar Echo Based on Data Augmentation and Feature Enhancement.
+\newblock {\em Shanghai Aerospace (Chinese-English)} {\bf 2023}, {\em 40},~61--69.
+\newblock {\url{https://doi.org/10.19328/j.cnki.2096-8655.2023.01.008}}.
+
+\bibitem[Zhou et~al.(2024)Zhou, Kangning, and Dinghui]{meizhou2024}
+Zhou, M.; Kangning, D.; Dinghui, W.
+\newblock Small Sample Fault Diagnosis of Bearings Based on Multi-Scale Cross-Feature Fusion Siamese Network.
+\newblock {\em Control Engineering} {\bf 2024}, pp. 1--8.
+\newblock {\url{https://doi.org/10.14107/j.cnki.kzgc.20240537}}.
+
+\bibitem[Li et~al.(2018)Li, Hao, Kang, and Benediktsson]{lishutao2018}
+Li, S.; Hao, Q.; Kang, X.; Benediktsson, J.A.
+\newblock Gaussian Pyramid Based Multiscale Feature Fusion for Hyperspectral Image Classification.
+\newblock {\em IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing} {\bf 2018}, {\em 11},~3312--3324.
+\newblock {\url{https://doi.org/10.1109/JSTARS.2018.2856741}}.
+
+\bibitem[Weifeng et~al.(2023)Weifeng, Kai, Dezhi, Weihua, Liming, and Yongshou]{SunW2023}
+Weifeng, S.; Kai, L.; Dezhi, Z.; Weihua, L.; Liming, X.; Yongshou, D.
+\newblock Overflow and Well Leakage Monitoring Method Combining Drilling Conditions and Bi-GRU.
+\newblock {\em Petroleum Drilling Techniques} {\bf 2023}, {\em 51},~37--44.
+
+\bibitem[Wu et~al.(2024)Wu, Wang, Zhang, Zhu, Zhang, Dong, Wang, and Zhu]{ZZY2024}
+Wu, L.; Wang, X.; Zhang, Z.; Zhu, G.; Zhang, Q.; Dong, P.; Wang, J.; Zhu, Z.
+\newblock Intelligent Monitoring Model for Lost Circulation Based on Unsupervised Time Series Autoencoder.
+\newblock {\em Processes} {\bf 2024}, {\em 12}.
+\newblock {\url{https://doi.org/10.3390/pr12071297}}.
+
+\end{thebibliography}
