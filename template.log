@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  26 FEB 2025 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  26 FEB 2025 17:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1468,15 +1468,15 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 18236A7A2A6B050299D7DC9590EEDEC5;4094.
  ) 
 Here is how much of TeX's memory you used:
- 33960 strings out of 476023
- 637252 string characters out of 5790926
+ 33957 strings out of 476023
+ 637228 string characters out of 5790926
  1960190 words of memory out of 5000000
  55006 multiletter control sequences out of 15000+600000
- 630559 words of font info for 388 fonts, out of 8000000 for 9000
+ 630400 words of font info for 386 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  123i,13n,126p,2552b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (15 pages, 4955861 bytes).
+Output written on template.pdf (15 pages, 4955870 bytes).
 PDF statistics:
  327 PDF objects out of 1000 (max. 8388607)
  265 compressed objects within 3 object streams
