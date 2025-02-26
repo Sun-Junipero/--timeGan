@@ -229,8 +229,10 @@ Subsequently, multi-scale feature extraction is performed on the features that h
 \[{{X}_{1}}=\sigma ({{W}_{2}}(\sigma ({{W}_{1}}({{X}_{0}}+{{b}_{1}}))+{{b}_{2}})\quad (5)\]
 	\[{{X}_{2}}=\sigma ({{W}_{3}}({{X}_{0}})+{{b}_{3}})\quad (6)\]
 	\[{{X}_{3}}=\sigma ({{f}_{GRU}}({{X}_{0}}))\quad (7)\]
-    where $\sigma$ denotes the ReLU activation function; \({{W}_{1}}\), \({{W}_{2}}\),  \({{W}_{3}}\) denote the weight matrices corresponding to the convolutions Convl, Conv2, and Conv3, respectively; \({{b}_{1}}\), \({{b}_{2}}\), \({{b}_{3}}\) denote the bias values corresponding to the above convolutions, respectively; and \({{f}_{GRU}}\) denotes the signal input into the gated loop unit.
-    Each layer uses the attention mechanism to dynamically adjust the feature weights to achieve adaptive allocation of the importance of different features. Specifically, the multi-layer fusion module fuses the expanded lost circulation data and wavelet transformed features at different levels, highlighting key information and suppressing redundant or irrelevant features through the attention mechanism.
+
+where $\sigma$ denotes the ReLU activation function; \({{W}_{1}}\), \({{W}_{2}}\),  \({{W}_{3}}\) denote the weight matrices corresponding to the convolutions Convl, Conv2, and Conv3, respectively; \({{b}_{1}}\), \({{b}_{2}}\), \({{b}_{3}}\) denote the bias values corresponding to the above convolutions, respectively; and \({{f}_{GRU}}\) denotes the signal input into the gated loop unit.
+
+Each layer uses the attention mechanism to dynamically adjust the feature weights to achieve adaptive allocation of the importance of different features. Specifically, the multi-layer fusion module fuses the expanded lost circulation data and wavelet transformed features at different levels, highlighting key information and suppressing redundant or irrelevant features through the attention mechanism.
 
 For different scales of local time features and long time dependent features, the local time features are summed to get X' and cross attention is calculated with \({{X}_{3}}\) to obtain the fusion feature information. The process of cross-attention mechanism is shown in Fig. \ref{fig:Cross-attention mechanism}.
 
@@ -242,8 +244,7 @@ For different scales of local time features and long time dependent features, th
 \end{figure}
 The multi-scale cross-feature fusion module is a sophisticated system that extracts local features at multiple scales through the use of convolution kernels at varying scales. In addition, it extracts global features and dependencies in the time series through the implementation of gated recurrent units (GRUs). Ultimately, the module performs feature fusion through the utilisation of the cross-attention mechanism. The feature extraction of local and global features at different scales is an effective method of obtaining a more comprehensive feature representation, which in turn improves the accuracy of fault diagnosis.
 
-Following the acquisition of the enhanced features, these are fed into the fully connected layer for prediction of target information. The detection classifier outputs the probability of a lost circulation occurring through the fully connected layer, and the output result is a binary classified lost circulation probability between 0 and 1. With regard to the loss function part, the error is calculated using the mean square error, and the output well leakage probability is used as biclassified cross entropy. The entire convolutional neural network structure is shown in Fig. \ref{fig:Multi-layer dynamic feature weight neural network structure}.
-
+Following the acquisition of the enhanced features, these are input into the fully connected layer for the prediction of target information. The detection classifier outputs the probability of lost circulation occurring through the fully connected layer, and the output result is a binary classified lost circulation probability between 0 and 1. Regarding the loss function, the error is calculated using the mean square error, and the output well leakage probability is used as binary cross-entropy. The entire convolutional neural network structure is shown in Fig. \ref{fig:Multi-layer dynamic feature weight neural network structure}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/多尺度融合网络.png}
