@@ -149,7 +149,7 @@ $^{2}$ \quad School of Petroleum Engineering, China University of Petroleum, Bei
 %}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-         \begin{document}
+        \begin{document}
 \section*{Abbreviations}
 \begin{enumerate}
     \item BP: Back Propagation
@@ -161,6 +161,8 @@ $^{2}$ \quad School of Petroleum Engineering, China University of Petroleum, Bei
     \item GRU: Gated Recurrent Unit
     \item WT: Wavelet Transform
     \item TimeGAN: Time Series Generative Adversarial Network
+    \item PCA: Principal Component Analysis
+    \item t-SNE: t-Distributed Stochastic Neighbor Embedding
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
@@ -180,7 +182,7 @@ Wavelet Transform (WT) is a tool for analysing signals in the time and frequency
 where $W\psi(a, b)$ are the wavelet coefficients, $f(t)$ is the signal to be analysed, $\psi$ is the mother wavelet function, and $a$ and $b$ denote the scale and translation parameters, respectively.
 The wavelet transform method is utilised to process the original feature signal, with the signal initially decomposed into 'low frequency approximation' and 'high frequency details'. This is followed by a further decomposition of the 'low frequency approximation' and 'high frequency details' into 'low frequency approximation' and 'high frequency details'. A subsequent decomposition of the resultant part of the last decomposition is then performed into 'low-frequency approximation' and 'high-frequency details', with each part of the decomposition subdivided individually until each part of the decomposition is limited to a single point. The 'high-frequency details' part is not decomposed, and the decomposition steps are illustrated in Figure ~\ref{fig:Wavelet Transform}. The application of wavelet transform facilitates the division of the signal into multiple scales, thereby enabling the analysis of the information of the target signal in each frequency band with greater precision and facilitating a comprehensive exploration of the intrinsic law of the signal.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/小波变换.png}
     \caption{Schematic of wavelet multilevel decomposition}
@@ -194,7 +196,7 @@ The wavelet transform method is utilised to process the original feature signal,
 The training process of GAN is an adversarial process, where the generator and the discriminator compete with each other in a game. In this game, the generator tries to generate more and more realistic fake data, while the discriminator tries to distinguish between real data and fake data as accurately as possible. The enhancement of TimeGAN \cite{Yoon2019} is attributable to its comprehension of two pivotal characteristics of temporal data: namely, the static features, which remain constant over time, and the temporal features, which undergo change over time.The TimeGAN network comprises four constituent elements: the embedding function, the recovery function, the sequence generator, and the sequence discriminator. The configuration of this network is illustrated in Figure \ref{fig:timegan}.  
 
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/timegan组成.png}
     \caption{TimeGAN Components}
@@ -236,7 +238,7 @@ Each layer uses the attention mechanism to dynamically adjust the feature weight
 
 For different scales of local time features and long time dependent features, the local time features are summed to get X' and cross attention is calculated with \({{X}_{3}}\) to obtain the fusion feature information. The process of cross-attention mechanism is shown in Fig. \ref{fig:Cross-attention mechanism}.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/交叉注意力机制.png}
     \caption{Cross-attention mechanism}
@@ -245,7 +247,7 @@ For different scales of local time features and long time dependent features, th
 The multi-scale cross-feature fusion module is a sophisticated system that extracts local features at multiple scales through the use of convolution kernels at varying scales. In addition, it extracts global features and dependencies in the time series through the implementation of gated recurrent units (GRUs). Ultimately, the module performs feature fusion through the utilisation of the cross-attention mechanism. The feature extraction of local and global features at different scales is an effective method of obtaining a more comprehensive feature representation, which in turn improves the accuracy of fault diagnosis.
 
 Following the acquisition of the enhanced features, these are input into the fully connected layer for the prediction of target information. The detection classifier outputs the probability of lost circulation occurring through the fully connected layer, and the output result is a binary classified lost circulation probability between 0 and 1. Regarding the loss function, the error is calculated using the mean square error, and the output well leakage probability is used as binary cross-entropy. The entire convolutional neural network structure is shown in Fig. \ref{fig:Multi-layer dynamic feature weight neural network structure}.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/多尺度融合网络.png}
     \caption{Multi-layer dynamic feature weight neural network structure}
@@ -266,7 +268,7 @@ Where,\({{r}_{s}}\) is the final Spearman correlation coefficient value taken by
 
 In this study, the Spearman correlation coefficient between each characteristic parameter and the lost circulation label is calculated, and the results are shown in Fig.  \ref{fig:Characteristic correlation coefficient calculation results}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/spearman.png}
     \caption{Characteristic correlation coefficient calculation results}
@@ -286,7 +288,7 @@ where x is the data sample, \({{x}_{scale}}\) is the normalised value of \({{x}}
 
 In this study, the sliding window method is used to construct fixed-length  lost circulation time series samples, as shown in Figure. \ref{fig:Time series sample construction based on sliding window method} . Under the premise of maximising the use of data, the window sliding step is set to 1, and the window length can be adjusted according to the modelling effect. In order to ensure that the sample has effective features, the window length is usually not less than 30 data points.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/滑动窗口.png}
     \caption{Time series sample construction based on sliding window method}
@@ -300,7 +302,7 @@ The key factors of the wavelet transform effect are the number of wavelet decomp
 
 Among the high-frequency detail features, the oscillation frequencies of d1 and d2 are higher, but the difference is not obvious, and the oscillation patterns of d4 and d5 exhibit excessive discreteness, rendering them inadequate for effectively capturing the continuous variations that occur before and after the onset of lost circulation. In contrast, d3 achieves a better balance between signal continuity and amplitude fluctuation characteristics, and is able to more clearly characterise the data fluctuations before and after the lost circulation. Therefore, the 3-level wavelet decomposition is the most effective.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/5级小波分解.png}
     \caption{Haar five-level wavelet decomposition reconstruction for SPPs}
@@ -309,7 +311,7 @@ Among the high-frequency detail features, the oscillation frequencies of d1 and 
 
 After wavelet transforming the seven  lost circulation time series features, the correlation between the new features and the  lost circulation labels is analysed by the correlation coefficient method, and the results are shown in Figure  \ref{fig:Spearman correlation coefficients of features before and after wavelet transformation}. Although the Spearman correlation coefficients of the new features have decreased, the transformed features of Hook load, SPP, TPIT and MFO are still strongly correlated with the lost circulation risk labels, and these four features are finally selected as the effective enhancement features of the lost circulation risk .
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/spearman相关系数.png}
     \caption{Spearman correlation coefficients of specific features (e.g., SPP, MFO) before and after wavelet transformation}
@@ -322,7 +324,7 @@ In order to ascertain the efficacy of the TimeGAN model in the generation of los
 
 The TimeGAN network constructed in this study generated the lost circulation time series data after 20,000 iterations. The comparison of the generated results with the real samples is shown in Figure   \ref{fig:TimeGAN Generation of Lost Circulation Time Series Data}, where the horizontal axis is the time step and the vertical axis is the normalised values of the feature parameters. While the generated data are numerically distinct from the actual data, they exhibit a certain degree of time series correlation. 
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/timeGan数据生成.png}
     \caption{TimeGAN Generation of Lost Circulation Time Series Data}
@@ -332,10 +334,10 @@ The TimeGAN network constructed in this study generated the lost circulation tim
 
 The results subsequent to PCA and t-SNE dimensionality reduction are demonstrated in Figure \label{fig:PCA and TSNE visualisation results of generated data versus raw data}. The proximity of the generated data (red dots) to the original data (black dots) indicates a resemblance between the static and temporal characteristics of the generated data and the real data. As demonstrated in the figure, irrespective of the dimensionality reduction outcomes of PCA or t-SNE, the generated data are distributed in proximity to the hotspot region of the original data and are equally sparse in the sparse region of the original data. This suggests that the TimeGAN-generated lost circulation temporal data features are more aligned with the real data.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/pca tsne.png}
-    \caption{PCA and TSNE visualisation results of generated data versus raw data}
+    \caption{PCA and T-SNE visualisation results of generated data versus raw data}
     \label{fig:PCA and TSNE visualisation results of generated data versus raw data}
 \end{figure}
 
@@ -347,7 +349,7 @@ The results subsequent to PCA and t-SNE dimensionality reduction are demonstrate
 
 A significant aspect of employing machine learning methodologies to address engineering challenges is the assessment of algorithmic models' efficacy. this study employs four evaluation metrics (i.e. Accuracy, Recall, Missing Alarm and False Alarm\cite{SunW2023}) to evaluate the performance of diverse models in identifying lost circulation risk \cite{ZZY2024}. The calculation formulae for each evaluation index are delineated in Table 1 and the subsequent equation.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabular}{lcc}
 \hline
