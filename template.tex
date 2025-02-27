@@ -279,7 +279,7 @@ Following a thorough examination of the available domain knowledge, in conjuncti
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Data cleaning}
-
+\label{subsec:Data cleaning}
 This study uses time series data from 13 wells in real drilling sites of offshore oil fields in China, with a data acquisition interval of 5 seconds, totaling over 300,000 normal data points and more than 5,000 lost circulation data points.The raw data contains anomalies and missing values. In order to screen the abnormal values, this study adopts the improved sliding window 3 \(\sigma\) method and sets the appropriate window size to avoid misjudging the normal data. The outliers are replaced with null values, which are subsequently filled by spline interpolation to preserve the overall trend of the data.This study applies smoothing filtering to the data, using the average of the current point and the previous 99 points to smooth each data point, which helps reduce noise and improve data quality. Finally, the maximum-minimum normalisation method was used to dimensionless the data, with the intention of shortening the model training time and reducing overfitting. The relevant formula (9) is as follows:
 $$ x _ { s c a l e } = \frac { x - x _ { m i n } } { x _ { m a x } - x _ { m i n } }\quad (9)$$
 where x is the data sample, \({{x}_{scale}}\) is the normalised value of \({{x}}\) , and \({{x}_{max}}\)  and \({{x}_{min}}\)  are the maximum and minimum values of the variable \({{x}}\)
@@ -320,7 +320,7 @@ After wavelet transforming the seven  lost circulation time series features, the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{TimeGAN-based temporal data expansion}
 
-In order to ascertain the efficacy of the TimeGAN model in the generation of lost circulation time-series data, this study utilises a training set comprising over 4,700 lost circulation time-series data points from the previously constructed lost circulation recording time-series dataset. In order to meet the input format requirements of the TimeGAN model, the lost circulation time-series data are initially constructed into fixed-window time-series samples using the sliding-window method and subsequently normalised. 
+In order to ascertain the efficacy of the TimeGAN model in the generation of lost circulation time-series data, this study uses the lost circulation time series data from the well leakage periods in the well leakage dataset, constructing the training set using the method mentioned in \ref{subsec:Data cleaning}. In order to meet the input format requirements of the TimeGAN model, the lost circulation time-series data are initially constructed into fixed-window time-series samples using the sliding-window method and subsequently normalised. 
 
 The TimeGAN network constructed in this study generated the lost circulation time series data after 20,000 iterations. The comparison of the generated results with the real samples is shown in Figure   \ref{fig:TimeGAN Generation of Lost Circulation Time Series Data}, where the horizontal axis is the time step and the vertical axis is the normalised values of the feature parameters. While the generated data are numerically distinct from the actual data, they exhibit a certain degree of time series correlation. 
 
@@ -332,7 +332,7 @@ The TimeGAN network constructed in this study generated the lost circulation tim
 \end{figure}
 
 
-The results subsequent to PCA and t-SNE dimensionality reduction are demonstrated in Figure \label{fig:PCA and TSNE visualisation results of generated data versus raw data}. The proximity of the generated data (red dots) to the original data (black dots) indicates a resemblance between the static and temporal characteristics of the generated data and the real data. As demonstrated in the figure, irrespective of the dimensionality reduction outcomes of PCA or t-SNE, the generated data are distributed in proximity to the hotspot region of the original data and are equally sparse in the sparse region of the original data. This suggests that the TimeGAN-generated lost circulation temporal data features are more aligned with the real data.
+The results subsequent to PCA and t-SNE dimensionality reduction are demonstrated in Figure \ref{fig:PCA and TSNE visualisation results of generated data versus raw data}. The proximity of the generated data (red dots) to the original data (black dots) indicates a resemblance between the static and temporal characteristics of the generated data and the real data. As demonstrated in the figure, irrespective of the dimensionality reduction outcomes of PCA or t-SNE, the generated data are distributed in proximity to the hotspot region of the original data and are equally sparse in the sparse region of the original data. This suggests that the TimeGAN-generated lost circulation temporal data features are more aligned with the real data.
 
 \begin{figure}[H]
     \centering
