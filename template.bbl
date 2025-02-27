@@ -1,5 +1,16 @@
 \begin{thebibliography}{999}
 
+\bibitem[Liu et~al.(2022)Liu, Ma, Shi, Chen, Han, Cai, and Liu]{LIU2022162}
+Liu, Z.; Ma, Q.; Shi, X.; Chen, Q.; Han, Z.; Cai, B.; Liu, Y.
+\newblock A dynamic quantitative risk assessment method for drilling well control by integrating multi types of risk factors.
+\newblock {\em Process Safety and Environmental Protection} {\bf 2022}, {\em 167},~162--172.
+\newblock {\url{https://doi.org/https://doi.org/10.1016/j.psep.2022.08.066}}.
+
+\bibitem[Saifulizan et~al.(2023)Saifulizan, Saifulizan, Busahmin, D.M, and Elmabrouk]{Saifulizan}
+Saifulizan, S.; Saifulizan, H.; Busahmin, B.; D.M, R.P.; Elmabrouk, S.
+\newblock EVALUATION OF DIFFERENT WELL CONTROL METHODS CONCENTRATING ON THE APPLICATION OF CONVENTIONAL DRILLING TECHNIQUE.
+\newblock {\em ARPN Journal of Engineering and Applied Sciences} {\bf 2023}, {\em 18}.
+
 \bibitem[Menghan(2016)]{simeng2016}
 Menghan, S.
 \newblock Research on Real-Time Early Warning Method for Drilling Kick.

@@ -1,17 +1,17 @@
 # Fdb version 4
-["bibtex template"] 1740649071.77346 "template.aux" "template.bbl" "template" 1740649075.47423 0
+["bibtex template"] 1740661126.39742 "template.aux" "template.bbl" "template" 1740661130.0541 0
   "./Definitions/mdpi.bst" 1739143498 23653 62187687754729c82001f3236396925e ""
-  "./ref.bib" 1739143498 9825 bbe1b9898703e2fc7cf4a93433475830 ""
-  "template.aux" 1740649074 11332 296696ea326fd3758cc983ba393ce699 "pdflatex"
+  "./ref.bib" 1740660992 12088 130067f7942542e1f3e5c78352ee9830 ""
+  "template.aux" 1740661129 11574 92d98a1a2791fb240671c458538bf0b6 "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
   (rewritten before read)
-["pdflatex"] 1740649072.12638 "c:/Users/pc/Desktop/A lost circulation monitoring model using multi-scale feature fusion based on wavelet transform and TimeGAN_2/template.tex" "template.pdf" "template" 1740649075.47458 0
+["pdflatex"] 1740661126.7293 "c:/Users/pc/Desktop/A lost circulation monitoring model using multi-scale feature fusion based on wavelet transform and TimeGAN_2/template.tex" "template.pdf" "template" 1740661130.05453 0
   "Definitions/journalnames.tex" 1739143498 84550 e138bbfc70ce7f26bd6c4e48304bccc3 ""
   "Definitions/logo-mdpi.eps" 1739143498 563678 5cdc8f4064e4e6cc8ec19e9f9b0d5b7c ""
   "Definitions/mdpi.cls" 1740560117 55480 0df3c8be819b478bb3c5cffd6da77789 ""
-  "c:/Users/pc/Desktop/A lost circulation monitoring model using multi-scale feature fusion based on wavelet transform and TimeGAN_2/template.tex" 1740649067 46845 1bef3b28a7859ad6744a01607b0d7fcc ""
+  "c:/Users/pc/Desktop/A lost circulation monitoring model using multi-scale feature fusion based on wavelet transform and TimeGAN_2/template.tex" 1740661115 46879 80a667c592187eb018bc597129659d70 ""
   "d:/texlive/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1740475723 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "d:/texlive/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1740475619 2971 def0b6c1f0b107b3b936def894055589 ""
   "d:/texlive/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1740475817 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -259,10 +259,10 @@
   "d:/texlive/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1740476664 5421107 50943a436de16da69768e88ac258fcbc ""
   "d:/texlive/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1740476714 6862368 442a0f77a5d825a53a2308fc82ed9f2c ""
   "d:/texlive/texlive/2024/texmf.cnf" 1740476655 713 e69b156964470283e0530f5060668171 ""
-  "template.aux" 1740649074 11332 296696ea326fd3758cc983ba393ce699 "pdflatex"
-  "template.bbl" 1740649072 3967 885a9a671c37cc6f9f05287a27110e3c "bibtex template"
-  "template.out" 1740649074 4094 18236a7a2a6b050299d7dc9590eedec5 "pdflatex"
-  "template.tex" 1740649067 46845 1bef3b28a7859ad6744a01607b0d7fcc ""
+  "template.aux" 1740661129 11574 92d98a1a2791fb240671c458538bf0b6 "pdflatex"
+  "template.bbl" 1740661126 4784 a4a5d4a3871a873a67c13713b8a4a2dc "bibtex template"
+  "template.out" 1740661129 4094 18236a7a2a6b050299d7dc9590eedec5 "pdflatex"
+  "template.tex" 1740661115 46879 80a667c592187eb018bc597129659d70 ""
   "图片/5级小波分解.png" 1739143498 757677 4f5c9529109af48ccd98244016ed0e66 ""
   "图片/pca tsne.png" 1739143498 1360393 f2891c1507a9c7cd2c9e0fef3e29d046 ""
   "图片/spearman.png" 1739143498 112936 e3c1f4038b0c1538b296c3737ee75ee1 ""
