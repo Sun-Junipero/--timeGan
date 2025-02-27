@@ -16,10 +16,11 @@ Menghan, S.
 \newblock Research on Real-Time Early Warning Method for Drilling Kick.
 \newblock Master's thesis, Southwest Petroleum University,  2016.
 
-\bibitem[Biao et~al.(2019)Biao, Zhenxiao, Shuanggui, Jun, Guohua, and Hongbin]{liubiao2019}
-Biao, L.; Zhenxiao, L.; Shuanggui, L.; Jun, T.; Guohua, W.; Hongbin, L.
-\newblock Lost Circulation Prediction Based on Support Vector Regression.
-\newblock {\em Drilling Production Technology} {\bf 2019}, {\em 42},~17--20+1--2.
+\bibitem[Al-Hameedi et~al.()Al-Hameedi, Alkinani, Dunn-Norman, Flori, Hilgedick, Amer, and Alsaba]{al-hameedi}
+Al-Hameedi, A.T.T.; Alkinani, H.H.; Dunn-Norman, S.; Flori, R.E.; Hilgedick, S.A.; Amer, A.S.; Alsaba, M.
+\newblock Mud Loss Estimation Using Machine Learning Approach.
+\newblock {\em 9},~1339--1354.
+\newblock {\url{https://doi.org/10.1007/s13202-018-0581-x}}.
 
 \bibitem[Yan et~al.(2023)Yan, Mubai, and Hao]{yandan2023}
 Yan, Y.; Mubai, D.; Hao, H.

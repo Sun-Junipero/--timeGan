@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  27 FEB 2025 20:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  27 FEB 2025 21:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1242,12 +1242,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [2]
-<图片/小波变换.png, id=151, 611.28375pt x 395.3341pt>
+<图片/小波变换.png, id=152, 611.28375pt x 395.3341pt>
 File: 图片/小波变换.png Graphic file (type png)
 <use 图片/小波变换.png>
 Package pdftex.def Info: 图片/小波变换.png  used on input line 191.
 (pdftex.def)             Requested size: 295.76642pt x 191.27835pt.
-<图片/timegan组成.png, id=154, 778.70924pt x 514.3215pt>
+<图片/timegan组成.png, id=155, 778.70924pt x 514.3215pt>
 File: 图片/timegan组成.png Graphic file (type png)
 <use 图片/timegan组成.png>
 Package pdftex.def Info: 图片/timegan组成.png  used on input line 205.
@@ -1269,12 +1269,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [4 <./图片/timegan组成.png (PNG copy)>]
-<图片/多尺度特征注意力.png, id=180, 819.4364pt x 335.00156pt>
+<图片/多尺度特征注意力.png, id=181, 819.4364pt x 335.00156pt>
 File: 图片/多尺度特征注意力.png Graphic file (type png)
 <use 图片/多尺度特征注意力.png>
 Package pdftex.def Info: 图片/多尺度特征注意力.png  used on input line 228.
 (pdftex.def)             Requested size: 295.76642pt x 120.91739pt.
-<图片/交叉注意力机制.png, id=182, 323.70938pt x 266.1945pt>
+<图片/交叉注意力机制.png, id=183, 323.70938pt x 266.1945pt>
 File: 图片/交叉注意力机制.png Graphic file (type png)
 <use 图片/交叉注意力机制.png>
 Package pdftex.def Info: 图片/交叉注意力机制.png  used on input line 247.
@@ -1288,7 +1288,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [5 <./图片/多尺度特征注意力.png (PNG copy)>]
-<图片/多尺度融合网络.png, id=190, 472.33607pt x 165.61874pt>
+<图片/多尺度融合网络.png, id=191, 472.33607pt x 165.61874pt>
 File: 图片/多尺度融合网络.png Graphic file (type png)
 <use 图片/多尺度融合网络.png>
 Package pdftex.def Info: 图片/多尺度融合网络.png  used on input line 256.
@@ -1302,7 +1302,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [6 <./图片/交叉注意力机制.png (PNG copy)> <./图片/多尺度融合网络.png (PNG copy)>]
-<图片/spearman.png, id=197, 445.446pt x 313.608pt>
+<图片/spearman.png, id=198, 445.446pt x 313.608pt>
 File: 图片/spearman.png Graphic file (type png)
 <use 图片/spearman.png>
 Package pdftex.def Info: 图片/spearman.png  used on input line 277.
@@ -1316,12 +1316,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [7 <./图片/spearman.png>]
-<图片/滑动窗口.png, id=206, 966.61125pt x 813.0375pt>
+<图片/滑动窗口.png, id=207, 966.61125pt x 813.0375pt>
 File: 图片/滑动窗口.png Graphic file (type png)
 <use 图片/滑动窗口.png>
 Package pdftex.def Info: 图片/滑动窗口.png  used on input line 297.
 (pdftex.def)             Requested size: 295.76642pt x 248.77626pt.
-<图片/5级小波分解.png, id=208, 958.3303pt x 812.66109pt>
+<图片/5级小波分解.png, id=209, 958.3303pt x 812.66109pt>
 File: 图片/5级小波分解.png Graphic file (type png)
 <use 图片/5级小波分解.png>
 Package pdftex.def Info: 图片/5级小波分解.png  used on input line 311.
@@ -1335,7 +1335,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [8 <./图片/滑动窗口.png (PNG copy)>]
-<图片/spearman相关系数.png, id=216, 598.089pt x 441.066pt>
+<图片/spearman相关系数.png, id=217, 598.089pt x 441.066pt>
 File: 图片/spearman相关系数.png Graphic file (type png)
 <use 图片/spearman相关系数.png>
 Package pdftex.def Info: 图片/spearman相关系数.png  used on input line 320.
@@ -1349,12 +1349,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [9 <./图片/5级小波分解.png (PNG copy)> <./图片/spearman相关系数.png>]
-<图片/timeGan数据生成.png, id=225, 1213.15735pt x 769.37437pt>
+<图片/timeGan数据生成.png, id=226, 1213.15735pt x 769.37437pt>
 File: 图片/timeGan数据生成.png Graphic file (type png)
 <use 图片/timeGan数据生成.png>
 Package pdftex.def Info: 图片/timeGan数据生成.png  used on input line 333.
 (pdftex.def)             Requested size: 295.76642pt x 187.5768pt.
-<图片/pca tsne.png, id=227, 918.43124pt x 536.0025pt>
+<图片/pca tsne.png, id=228, 918.43124pt x 536.0025pt>
 File: 图片/pca tsne.png Graphic file (type png)
 <use 图片/pca tsne.png>
 Package pdftex.def Info: 图片/pca tsne.png  used on input line 343.
@@ -1384,12 +1384,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [12]
-<图片/特征增强.png, id=250, 504.138pt x 326.967pt>
+<图片/特征增强.png, id=251, 504.138pt x 326.967pt>
 File: 图片/特征增强.png Graphic file (type png)
 <use 图片/特征增强.png>
 Package pdftex.def Info: 图片/特征增强.png  used on input line 452.
 (pdftex.def)             Requested size: 295.76642pt x 191.82622pt.
-<图片/数据扩充.png, id=252, 458.586pt x 313.827pt>
+<图片/数据扩充.png, id=253, 458.586pt x 313.827pt>
 File: 图片/数据扩充.png Graphic file (type png)
 <use 图片/数据扩充.png>
 Package pdftex.def Info: 图片/数据扩充.png  used on input line 463.
@@ -1403,7 +1403,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [13 <./图片/特征增强.png>]
-<图片/综合图像.png, id=263, 866.364pt x 322.149pt>
+<图片/综合图像.png, id=264, 866.364pt x 322.149pt>
 File: 图片/综合图像.png Graphic file (type png)
 <use 图片/综合图像.png>
 Package pdftex.def Info: 图片/综合图像.png  used on input line 476.
@@ -1444,18 +1444,18 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 18236A7A2A6B050299D7DC9590EEDEC5;4094.
  ) 
 Here is how much of TeX's memory you used:
- 33990 strings out of 476023
- 637440 string characters out of 5790926
+ 33993 strings out of 476023
+ 637460 string characters out of 5790926
  1963190 words of memory out of 5000000
  55013 multiletter control sequences out of 15000+600000
- 631272 words of font info for 398 fonts, out of 8000000 for 9000
+ 631431 words of font info for 400 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 123i,13n,126p,2569b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,13n,126p,2839b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (15 pages, 4957957 bytes).
+Output written on template.pdf (15 pages, 4958507 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
+ 351 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
  83 named destinations out of 1000 (max. 500000)
  95496 words of extra memory for PDF output out of 106986 (max. 10000000)
 
