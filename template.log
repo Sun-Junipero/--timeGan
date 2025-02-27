@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  27 FEB 2025 21:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  27 FEB 2025 21:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1270,12 +1270,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [4 <./图片/timegan组成.png (PNG copy)>]
-<图片/多尺度特征注意力.png, id=185, 819.4364pt x 335.00156pt>
+<图片/多尺度特征注意力.png, id=184, 819.4364pt x 335.00156pt>
 File: 图片/多尺度特征注意力.png Graphic file (type png)
 <use 图片/多尺度特征注意力.png>
 Package pdftex.def Info: 图片/多尺度特征注意力.png  used on input line 228.
 (pdftex.def)             Requested size: 295.76642pt x 120.91739pt.
-<图片/交叉注意力机制.png, id=187, 323.70938pt x 266.1945pt>
+<图片/交叉注意力机制.png, id=186, 323.70938pt x 266.1945pt>
 File: 图片/交叉注意力机制.png Graphic file (type png)
 <use 图片/交叉注意力机制.png>
 Package pdftex.def Info: 图片/交叉注意力机制.png  used on input line 247.
@@ -1461,7 +1461,7 @@ Here is how much of TeX's memory you used:
  36 hyphenation exceptions out of 8191
  123i,13n,126p,2837b,595s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (16 pages, 4960219 bytes).
+Output written on template.pdf (16 pages, 4960406 bytes).
 PDF statistics:
  365 PDF objects out of 1000 (max. 8388607)
  301 compressed objects within 4 object streams
