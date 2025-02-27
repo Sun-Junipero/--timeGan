@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  27 FEB 2025 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  27 FEB 2025 17:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1393,12 +1393,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <图片/特征增强.png, id=240, 504.138pt x 326.967pt>
 File: 图片/特征增强.png Graphic file (type png)
 <use 图片/特征增强.png>
-Package pdftex.def Info: 图片/特征增强.png  used on input line 446.
+Package pdftex.def Info: 图片/特征增强.png  used on input line 448.
 (pdftex.def)             Requested size: 295.76642pt x 191.82622pt.
 <图片/数据扩充.png, id=241, 458.586pt x 313.827pt>
 File: 图片/数据扩充.png Graphic file (type png)
 <use 图片/数据扩充.png>
-Package pdftex.def Info: 图片/数据扩充.png  used on input line 457.
+Package pdftex.def Info: 图片/数据扩充.png  used on input line 459.
 (pdftex.def)             Requested size: 295.76642pt x 202.40967pt.
 
 
@@ -1415,7 +1415,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <图片/综合图像.png, id=250, 866.364pt x 322.149pt>
 File: 图片/综合图像.png Graphic file (type png)
 <use 图片/综合图像.png>
-Package pdftex.def Info: 图片/综合图像.png  used on input line 470.
+Package pdftex.def Info: 图片/综合图像.png  used on input line 472.
 (pdftex.def)             Requested size: 394.35522pt x 146.63701pt.
 
 
@@ -1465,7 +1465,7 @@ Here is how much of TeX's memory you used:
  36 hyphenation exceptions out of 8191
  123i,13n,126p,2552b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (15 pages, 4955913 bytes).
+Output written on template.pdf (15 pages, 4955911 bytes).
 PDF statistics:
  333 PDF objects out of 1000 (max. 8388607)
  271 compressed objects within 3 object streams
