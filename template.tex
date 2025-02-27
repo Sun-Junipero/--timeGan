@@ -390,9 +390,9 @@ In the context of training a model of this nature, there are two primary types o
 
 Given the vast number of hyperparameters and the wide range of values they can assume, this study employs the open-source library Optuna for the optimisation of hyperparameters. This library is a specialised open-source toolkit developed for the optimisation of hyperparameters in deep learning models. It is capable of automatically searching for the optimal hyperparameter configurations within the hyperparameter space by using Bayesian optimisation and genetic algorithms, among other methods. It is notable for its simplicity and ease of use, coupled with a high degree of flexibility, and its compatibility with mainstream deep learning models such as PyTorch and TensorFlow, TensorFlow, and other mainstream deep learning platforms.
 
-In the experiment, the native TimeGAN network in the ydata-synthetic library based on the Python language is utilised to construct the data expansion generation model, and the primary parameter settings of the model are exhibited in Table \label{TimeGAN parameter settings}.
+In the experiment, the native TimeGAN network in the ydata-synthetic library     based on the Python language is utilised to construct the data expansion generation model, and the primary parameter settings of the model are exhibited in Table \ref{TimeGAN parameter settings}.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \caption{TimeGAN parameter settings}
 \begin{tabular}{lll}
@@ -445,9 +445,9 @@ In this section, the analysis of the optimisation effect of different feature en
 
 \subsection{Feature enhancement effect analysis}
 
-As demonstrated in Figure \label{fig:Evaluation of feature enhancement effects}, following the implementation of wavelet transform for the purpose of feature enhancement, the evaluation indexes of the model on the test set are optimised in comparison with those prior to feature enhancement. The accuracy rate is increased by 1.2\%, the precision rate by 0.4\%, the recall rate by 2.4\%, and the leakage rate and the false alarm rate are decreased by 2.4\% and 0.4\%, respectively.
+As demonstrated in Figure \ref{fig:Evaluation of feature enhancement effects}, following the implementation of wavelet transform for the purpose of feature enhancement, the evaluation indexes of the model on the test set are optimised in comparison with those prior to feature enhancement. The accuracy rate is increased by 1.2\%, the precision rate by 0.4\%, the recall rate by 2.4\%, and the leakage rate and the false alarm rate are decreased by 2.4\% and 0.4\%, respectively.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/特征增强.png}
     \caption{Evaluation of feature enhancement effects}
@@ -456,9 +456,9 @@ As demonstrated in Figure \label{fig:Evaluation of feature enhancement effects},
 
 \subsection{Analysis of the effect of data expansion}
 
-As shown in the figure    \label{fig:Analysis of the effect of data expansion} , The findings of this study demonstrate that data expansion significantly improves model performance, especially at 1x and 2x expansion. The increase in accuracy is not significant when the expansion is increased from 2x to 4x. The optimum model performance is achieved with 2x expansion. Expansion beyond 2x is difficult to achieve a full improvement with the current dataset and significantly increases model training time.
+As shown in the figure    \ref{fig:Analysis of the effect of data expansion} , The findings of this study demonstrate that data expansion significantly improves model performance, especially at 1x and 2x expansion. The increase in accuracy is not significant when the expansion is increased from 2x to 4x. The optimum model performance is achieved with 2x expansion. Expansion beyond 2x is difficult to achieve a full improvement with the current dataset and significantly increases model training time.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{图片/数据扩充.png}
     \caption{Analysis of the effect of data expansion}
@@ -469,9 +469,9 @@ As shown in the figure    \label{fig:Analysis of the effect of data expansion} ,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Analysis of integrated optimisation effect and multi-scale feature fusion effect}
 
-In the context of the original dataset, which exhibits a loss of circulation, both the feature enhancement method and the data expansion method have been shown to enhance the performance of the model. However, it has been demonstrated that the data expansion method exerts a more substantial influence on the model's performance in comparison to the feature enhancement method. In this study, the two aforementioned methods are fused with multi-scale features, and the effect of multi-scale feature fusion optimisation on model performance is compared with that of individual optimisation, as shown in Figure \label{fig:Comprehensive optimisation effect analysis}. The findings reveal that multi-scale feature fusion optimisation surpasses individual optimisation, attaining an accuracy rate of 93.8\%, a precision rate of 95.1\%, a recall rate of 92.2\%, and leakage and false alarm rates of 7.6\% and 4.8\%, respectively. Following the multi-scale feature fusion, the accuracy and precision of the model have been evidently enhanced in comparison with the unoptimised tandem model. The accuracy has been augmented by 8.8\%, the precision by 6.1\%, the recall by 12.2\%, and the leakage rate by 12.4\%, whilst the false alarm rate has been diminished by 6.2\%.
+In the context of the original dataset, which exhibits a loss of circulation, both the feature enhancement method and the data expansion method have been shown to enhance the performance of the model. However, it has been demonstrated that the data expansion method exerts a more substantial influence on the model's performance in comparison to the feature enhancement method. In this study, the two aforementioned methods are fused with multi-scale features, and the effect of multi-scale feature fusion optimisation on model performance is compared with that of individual optimisation, as shown in Figure \ref{fig:Comprehensive optimisation effect analysis}. The findings reveal that multi-scale feature fusion optimisation surpasses individual optimisation, attaining an accuracy rate of 93.8\%, a precision rate of 95.1\%, a recall rate of 92.2\%, and leakage and false alarm rates of 7.6\% and 4.8\%, respectively. Following the multi-scale feature fusion, the accuracy and precision of the model have been evidently enhanced in comparison with the unoptimised tandem model. The accuracy has been augmented by 8.8\%, the precision by 6.1\%, the recall by 12.2\%, and the leakage rate by 12.4\%, whilst the false alarm rate has been diminished by 6.2\%.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{图片/综合图像.png}
     \caption{Comprehensive optimisation effect analysis}
