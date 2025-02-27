@@ -1,5 +1,17 @@
 \begin{thebibliography}{999}
 
+\bibitem[Elmousalami and Sakr(2024)]{ELMOUSALAMI2024212837}
+Elmousalami, H.; Sakr, I.
+\newblock Artificial intelligence for drilling lost circulation: A systematic literature review.
+\newblock {\em Geoenergy Science and Engineering} {\bf 2024}, {\em 239},~212837.
+\newblock {\url{https://doi.org/https://doi.org/10.1016/j.geoen.2024.212837}}.
+
+\bibitem[Albattat et~al.(2022)Albattat, AlSinan, Kwak, and Hoteit]{ALBATTAT2022110770}
+Albattat, R.; AlSinan, M.; Kwak, H.; Hoteit, H.
+\newblock Modeling lost-circulation in natural fractures using semi-analytical solutions and type-curves.
+\newblock {\em Journal of Petroleum Science and Engineering} {\bf 2022}, {\em 216},~110770.
+\newblock {\url{https://doi.org/https://doi.org/10.1016/j.petrol.2022.110770}}.
+
 \bibitem[Liu et~al.(2022)Liu, Ma, Shi, Chen, Han, Cai, and Liu]{LIU2022162}
 Liu, Z.; Ma, Q.; Shi, X.; Chen, Q.; Han, Z.; Cai, B.; Liu, Y.
 \newblock A dynamic quantitative risk assessment method for drilling well control by integrating multi types of risk factors.
@@ -16,7 +28,7 @@ Menghan, S.
 \newblock Research on Real-Time Early Warning Method for Drilling Kick.
 \newblock Master's thesis, Southwest Petroleum University,  2016.
 
-\bibitem[Al-Hameedi et~al.()Al-Hameedi, Alkinani, Dunn-Norman, Flori, Hilgedick, Amer, and Alsaba]{al-hameedi}
+\bibitem[Al-Hameedi et~al.()Al-Hameedi, Alkinani, Dunn-Norman, Flori, Hilgedick, Amer, and Alsaba]{alhameedi}
 Al-Hameedi, A.T.T.; Alkinani, H.H.; Dunn-Norman, S.; Flori, R.E.; Hilgedick, S.A.; Amer, A.S.; Alsaba, M.
 \newblock Mud Loss Estimation Using Machine Learning Approach.
 \newblock {\em 9},~1339--1354.

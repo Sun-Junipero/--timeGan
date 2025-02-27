@@ -517,11 +517,6 @@ INPUT ./图片/小波变换.png
 INPUT ./图片/小波变换.png
 INPUT ./图片/小波变换.png
 INPUT ./图片/小波变换.png
-INPUT ./图片/timegan组成.png
-INPUT ./图片/timegan组成.png
-INPUT ./图片/timegan组成.png
-INPUT ./图片/timegan组成.png
-INPUT ./图片/timegan组成.png
 INPUT d:/texlive/texlive/2024/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT d:/texlive/texlive/2024/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT d:/texlive/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -545,6 +540,11 @@ INPUT d:/texlive/texlive/2024/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT d:/texlive/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT d:/texlive/texlive/2024/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT d:/texlive/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT ./图片/timegan组成.png
+INPUT ./图片/timegan组成.png
+INPUT ./图片/timegan组成.png
+INPUT ./图片/timegan组成.png
+INPUT ./图片/timegan组成.png
 INPUT d:/texlive/texlive/2024/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
 INPUT d:/texlive/texlive/2024/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT d:/texlive/texlive/2024/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm

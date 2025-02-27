@@ -3,47 +3,47 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: template.aux
 The style file: Definitions/mdpi.bst
 Database file #1: ref.bib
-Warning--empty journal in al-hameedi
+Warning--empty journal in alhameedi
 Warning--empty chapter and pages in Yoon2019
-You've used 14 entries,
+You've used 16 entries,
             2887 wiz_defined-function locations,
-            663 strings with 7278 characters,
-and the built_in function-call counts, 6366 in all, are:
-= -- 500
-> -- 502
-< -- 3
-+ -- 218
-- -- 136
-* -- 595
-:= -- 1010
-add.period$ -- 48
-call.type$ -- 14
-change.case$ -- 14
-chr.to.int$ -- 14
-cite$ -- 16
-duplicate$ -- 261
-empty$ -- 451
-format.name$ -- 165
-if$ -- 1320
+            681 strings with 7951 characters,
+and the built_in function-call counts, 7182 in all, are:
+= -- 571
+> -- 548
+< -- 4
++ -- 238
+- -- 148
+* -- 671
+:= -- 1134
+add.period$ -- 56
+call.type$ -- 16
+change.case$ -- 16
+chr.to.int$ -- 16
+cite$ -- 18
+duplicate$ -- 299
+empty$ -- 517
+format.name$ -- 183
+if$ -- 1490
 int.to.chr$ -- 1
-int.to.str$ -- 14
-missing$ -- 14
-newline$ -- 79
-num.names$ -- 42
-pop$ -- 156
+int.to.str$ -- 16
+missing$ -- 16
+newline$ -- 91
+num.names$ -- 48
+pop$ -- 172
 preamble$ -- 0
-purify$ -- 14
+purify$ -- 16
 quote$ -- 0
-skip$ -- 171
+skip$ -- 193
 stack$ -- 0
-substring$ -- 233
-swap$ -- 53
+substring$ -- 273
+swap$ -- 61
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 95
+type$ -- 109
 warning$ -- 2
-while$ -- 40
+while$ -- 46
 width$ -- 0
-write$ -- 184
+write$ -- 212
 (There were 2 warnings)
