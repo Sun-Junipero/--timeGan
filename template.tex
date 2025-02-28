@@ -214,6 +214,41 @@ $$ I _ { U } = E _ { S , X _ {1: T- P } } \left[ \log y _ { s } + \sum _ { t } \
 $$ I _ { S } = E _ { S , X _ { 1: T - P } } \left[ \sum _ { t } | | h _ { t } - g _ { x } ( h _ { S } , h _ { t - 1 } , z _ { t } ) | | _ { 2 } \right]\quad (4)$$
 
 where \({{\widetilde{S}}}\) and \({{\widetilde{X}}_{1:T}}\) denote the static and temporal feature vectors of the generated data,  \({S}\) and \({X}_{1:T}\) denote the static and temporal feature vectors of the real data,  \({h}_{s}\) and  \({h}_{1:T}\) denote the static and temporal feature vectors of the latent layer feature space, \({{\widehat{y}}_{s}}\) and  \({{\widehat{y}}_{1:T}}\) denote the discriminator's discriminant values for the static and temporal feature vectors.
+
+
+\begin{table}[H]
+    \centering
+    \caption{Comparison of Loss Functions: Core Functions and Technical Specifications}
+    \label{tab:loss_comparison}
+    \begin{tabular}{p{3cm}p{6cm}p{6cm}}
+    \toprule
+    \textbf{Loss Function} & \textbf{Core Function} & \textbf{Technical Specification} \\
+    \midrule
+    \textbf{Reconstruction Loss \({{I}_{R}}\)} & 
+    Ensures distribution consistency between generated data ($\tilde{S}$, $\tilde{X}_{1:T}$) and real data ($S$, $X_{1:T}$) in both static and temporal features &
+    Enhances data fidelity through L2-norm constraints on feature space and invertible latent space mapping. \\
+    \addlinespace
+    
+    \textbf{Unsupervised Loss \({{I}_{u}}\)} & 
+    Optimizes adversarial training between generator and discriminator, forcing generated data ($\hat{y}_s$, $\hat{y}_t$) to approximate discriminative results of real data ($y_s$, $y_t$) &
+    Improves temporal coherence and pattern authenticity via adversarial learning mechanisms. \\
+    \addlinespace
+    
+    \textbf{Supervised Loss \({{I}_{s}}\)} & 
+    Constrains dynamic evolution in latent feature space ($h_S$, $h_t$), enforcing temporal generator ($g_X$) to capture time-dependent relationships &
+    Enhances stability of sequential prediction through explicit supervision of latent state ($h_t$) recurrence. \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+
+
+
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Multi-scale feature fusion neural network structure }
 
