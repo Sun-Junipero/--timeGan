@@ -31,7 +31,7 @@ Menghan, S.
 \bibitem[Al-Hameedi et~al.()Al-Hameedi, Alkinani, Dunn-Norman, Flori, Hilgedick, Amer, and Alsaba]{alhameedi}
 Al-Hameedi, A.T.T.; Alkinani, H.H.; Dunn-Norman, S.; Flori, R.E.; Hilgedick, S.A.; Amer, A.S.; Alsaba, M.
 \newblock Mud Loss Estimation Using Machine Learning Approach.
-\newblock {\em 9},~1339--1354.
+\newblock {\em Journal of Petroleum Exploration and Production Technology}, {\em 9},~1339--1354.
 \newblock {\url{https://doi.org/10.1007/s13202-018-0581-x}}.
 
 \bibitem[Yan et~al.(2023)Yan, Mubai, and Hao]{yandan2023}
@@ -57,7 +57,7 @@ Grossmann, A.; Morlet, J.
 
 \bibitem[Yoon et~al.(2019)Yoon, Jarrett, and van~der Schaar]{Yoon2019}
 Yoon, J.; Jarrett, D.; van~der Schaar, M., Time-series generative adversarial networks.
-\newblock In {\em Proceedings of the 33rd International Conference on Neural Information Processing Systems}; Curran Associates Inc.: Red Hook, NY, USA,  2019.
+\newblock In {\em Proceedings of the 33rd International Conference on Neural Information Processing Systems}; Curran Associates Inc.: Red Hook, NY, USA,  2019; p.~11.
 
 \bibitem[Hongyu et~al.(2023)Hongyu, Zhiwen, Maoguo, Yue, Zhou, Yuzhou, and Yang]{zhaohongyu2023}
 Hongyu, Z.; Zhiwen, Z.; Maoguo, G.; Yue, W.; Zhou, Y.; Yuzhou, L.; Yang, Z.
