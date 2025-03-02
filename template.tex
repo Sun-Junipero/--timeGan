@@ -398,19 +398,22 @@ A significant aspect of employing machine learning methodologies to address engi
 
 \label{True Result vs. Forecast Result}
 \end{table}
-TP is defined as the number of samples that are correctly classified as positive by the model;
-FN is defined as the number of samples that are incorrectly classified as negative by the model;
-FP is defined as the number of samples that are incorrectly classified as positive by the model; and
-TN is defined as the number of samples that are correctly classified as negative by the model.
+\textbf{TP} is defined as the number of samples that are correctly classified as positive by the model;
+\textbf{FN} is defined as the number of samples that are incorrectly classified as negative by the model;
+\textbf{FP} is defined as the number of samples that are incorrectly classified as positive by the model; and
+\textbf{TN} is defined as the number of samples that are correctly classified as negative by the model.
 
 $$ A c c u r a c y = \frac { T P + T N } { T P + F N + T N + F P }\quad (10)$$
-$$ R e c a l l = \frac { T P } { T P + F N } \quad (11)$$
 
-$$ M i s sin g A l a r m = \frac { F N } { T P + F N } \quad (12)$$
+$$ P r e c i s i o n = \frac { T P } { T P + F P }\quad (11)$$
 
-$$ F a l s e A l a r m = \frac { F P } { T P + F P } \quad (13)$$
+$$ R e c a l l = \frac { T P } { T P + F N } \quad (12)$$
 
-In a classification model, \textbf{accuracy} represents the proportion of correctly classified samples to the total number of samples. \textbf{Recall}, specifically for positive cases, is the proportion of true positive samples correctly identified out of all actual positive samples. \textbf{Missing Alarm} refers to the fraction of actual lost circulation samples that are incorrectly classified as non-lost circulation, representing missed detections. Conversely, \textbf{False Alarm} denotes the fraction of non-lost circulation samples that are incorrectly classified as lost circulation, indicating misclassifications among predicted positive samples.
+$$ M i s sin g A l a r m = \frac { F N } { T P + F N } \quad (13)$$
+
+$$ F a l s e A l a r m = \frac { F P } { T P + F P } \quad (14)$$
+
+In a classification model, \textbf{accuracy} represents the proportion of correctly classified samples to the total number of samples. \textbf{Precision} represents the proportion of true positive samples among all samples predicted as positive, indicating the model's ability to avoid false positive predictions. \textbf{Recall}, specifically for positive cases, is the proportion of true positive samples correctly identified out of all actual positive samples. \textbf{Missing Alarm} refers to the fraction of actual lost circulation samples that are incorrectly classified as non-lost circulation, representing missed detections. Conversely, \textbf{False Alarm} denotes the fraction of non-lost circulation samples that are incorrectly classified as lost circulation, indicating misclassifications among predicted positive samples. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Parameter setting }
@@ -448,22 +451,22 @@ In the experiment, the native TimeGAN network in the ydata-synthetic library    
 \subsection{Hybrid Loss Function Design }
  
 In order to enhance the performance of the lost circulation detection model, a hybrid loss function is designed in this study to combine multiple loss objectives to balance the prediction accuracy and feature selection capability, while effectively suppressing the overfitting phenomenon. The hybrid loss function consists of the mean square error (MSE) of coordinate regression and the cross-entropy loss of confidence to balance the demands of the classification task and the regression task. The hybrid loss function expression is:
-$$ L _ { t o t a l } = \lambda _ { 1 } L _ { M S E } + \lambda _ { 2 } L _ { C E } + \lambda _ { 3 } L _ { r e g }\quad (14)$$
+$$ L _ { t o t a l } = \lambda _ { 1 } L _ { M S E } + \lambda _ { 2 } L _ { C E } + \lambda _ { 3 } L _ { r e g }\quad (15)$$
 
 \( L _ { M S E } \): The Mean Squared Error (MSE) loss, which is used to measure the accuracy of the lost circulation feature regression task, is given by:
-$$ L _ { M S E } = \frac { 1 } { N } \sum _ { i = 1 } ^ { N } ( y _ { i } - \widehat { y } _ { i } ) ^ { 2 }\quad (15)$$
+$$ L _ { M S E } = \frac { 1 } { N } \sum _ { i = 1 } ^ { N } ( y _ { i } - \widehat { y } _ { i } ) ^ { 2 }\quad (16)$$
 
 The true value is denoted by \({ y } _ { i } \), the model prediction by \(\widehat { y } _ { i }\) , and the number of samples by \(N\).
 
 
 \(L _ { CE}\): Cross Entropy Loss, which is employed to evaluate the confidence of the occurrence of lost circulation in the classification task, is given by:
-\[{{L}_{CE}}=-\frac{1}{N}\underset{i=1}{\overset{N}{\mathop \sum }}\,\left[ {{y}_{i}}\log {{{\hat{y}}}_{i}}+(1-{{y}_{i}})\log (1-{{{\hat{y}}}_{i}}) \right]\quad (16)\]
+\[{{L}_{CE}}=-\frac{1}{N}\underset{i=1}{\overset{N}{\mathop \sum }}\,\left[ {{y}_{i}}\log {{{\hat{y}}}_{i}}+(1-{{y}_{i}})\log (1-{{{\hat{y}}}_{i}}) \right]\quad (17)\]
 
 Where, \({y}_{i}\) denotes the true label, and \({\hat{y}}_{i}\) denotes the probability value predicted by the model.
 
 \({L}_{reg
 }\): Regularisation Loss, which is employed to constrain the complexity of the model and enhance the feature selection capability, is given by: In this study, L1 regularisation is employed, and its formula is:
-$$ L _ { r e g } = | | w | | _ { 1 } = \sum _ { j = 1 } ^ { d } | w _ { j } |\quad (17)$$
+$$ L _ { r e g } = | | w | | _ { 1 } = \sum _ { j = 1 } ^ { d } | w _ { j } |\quad (18)$$
 
 \(w\), The weight vector of the model, \(d\), is the dimension of the model parameters.
 
