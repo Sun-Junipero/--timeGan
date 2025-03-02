@@ -98,7 +98,7 @@ $^{2}$ \quad School of Petroleum Engineering, China University of Petroleum, Bei
 
 %\conference{} % An extended version of a conference paper
 % Abstract (Do not insert blank lines, i.e. \\) 
-\abstract{The issue of lost circulation represents a significant challenge in drilling, given its potential to impede both safety and efficiency.    The traditional monitoring model is hindered by the presence of noise and the complexity of temporal fluctuations in lost circulation data, resulting in suboptimal performance with regard to accuracy and generalisation ability.    This, in turn, complicates the adaptation of the model to diverse working conditions.   To address these limitations, this study proposes a multi-scale feature fusion model based on wavelet transform and TimeGAN.    Wavelet transform enhances the features of time series data, while TimeGAN (Time Series Generative Adversarial Network) excels in generating realistic time series and augmenting scarce or missing data.    This model leverages convolutional network feature extraction and integrates features via a multi-scale feature fusion module to investigate correlations among different features.   Consequently, it effectively mitigates the overfitting issue caused by limited drilling loss samples.  The experimental findings demonstrate that the multi-scale feature fusion model proposed in this study enhances the accuracy by 8.8\% , reduces the leakage rate and false alarm rate by 12.4\%  and 6.2\% , respectively, and attains a test set accuracy of 93.8\%  and an accuracy of 95.1\%  in the lost circulation identification task in comparison to the unoptimized model.    The method outlined in this study provides reliable technical support for the monitoring of lost circulation risk, thereby contributing to the enhancement of safety and efficiency in the drilling process.}
+\abstract{lost circulation is a major challenge in the drilling process, which seriously restricts the safety and efficiency of drilling.  The traditional monitoring model is hindered by the presence of noise and the complexity of temporal fluctuations in lost circulation data, resulting in suboptimal performance with regard to accuracy and generalisation ability, and it is difficult to adapt to the needs of different working conditions.   To address these limitations, this study proposes a multi-scale feature fusion model based on wavelet transform and TimeGAN.    Wavelet transform enhances the features of time series data, while TimeGAN (Time Series Generative Adversarial Network) excels in generating realistic time series and augmenting scarce or missing data.    This model leverages convolutional network feature extraction and integrates features via a multi-scale feature fusion module to investigate correlations among different features.   The experimental findings demonstrate that the multi-scale feature fusion model proposed in this study enhances the accuracy by 8.8\% , reduces the missing alarm rate and false alarm rate by 12.4\%  and 6.2\% , respectively, and attains a test set accuracy of 93.8\%  and an precision of 95.1\%  in the lost circulation identification task in comparison to the unoptimized model.    The method outlined in this study provides reliable technical support for the monitoring of lost circulation risk, thereby contributing to the enhancement of safety and efficiency in the drilling process.}
 
 % Keywords
 \keyword{Wavelet transform; TimeGAN; multi-scale feature fusion;  lost circulation risk} 
@@ -189,7 +189,7 @@ The wavelet transform method is utilised to process the original feature signal,
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{图片/小波变换.png}
+    \includegraphics[width=0.95\linewidth]{图片/小波变换.png}
     \caption{Schematic of wavelet multilevel decomposition}
     \label{fig:Wavelet Transform}
 \end{figure}
@@ -203,7 +203,7 @@ The training process of GAN is an adversarial process, where the generator and t
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{图片/timegan组成.png}
+    \includegraphics[width=0.95\linewidth]{图片/timegan组成.png}
     \caption{TimeGAN Components}
     \label{fig:timegan}
 \end{figure}
@@ -265,7 +265,7 @@ As the various evaluation factors contain rich and complex information, the mult
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{图片/多尺度特征注意力.png}
+    \includegraphics[width=1\linewidth,height=0.28\textheight]{图片/多尺度特征注意力.png}
     \caption{Multi-scale cross-feature fusion module}
     \label{fig:Multi-scale cross-feature fusion module}
 \end{figure}
@@ -286,7 +286,7 @@ For different scales of local time features and long time dependent features, th
 Following the acquisition of the enhanced features, these are input into the fully connected layer for the prediction of target information. The detection classifier outputs the probability of lost circulation occurring through the fully connected layer, and the output result is a binary classified lost circulation probability between 0 and 1. Regarding the loss function, the error is calculated using the mean square error, and the output well leakage probability is used as binary cross-entropy. The entire convolutional neural network structure is shown in Fig. \ref{fig:Multi-layer dynamic feature weight neural network structure}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{图片/多尺度融合网络.png}
+    \includegraphics[width=0.95\linewidth]{图片/多尺度融合网络.png}
     \caption{Multi-layer dynamic feature weight neural network structure}
     \label{fig:Multi-layer dynamic feature weight neural network structure}
 \end{figure}
@@ -327,7 +327,7 @@ In this study, the sliding window method is used to construct fixed-length  lost
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{图片/滑动窗口.png}
+    \includegraphics[width=0.85\linewidth]{图片/滑动窗口.png}
     \caption{Time series sample construction based on sliding window method}
     \label{fig:Time series sample construction based on sliding window method}
 \end{figure}
@@ -341,7 +341,7 @@ Among the high-frequency detail features, the oscillation frequencies of d1 and 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{图片/5级小波分解.png}
+    \includegraphics[width=0.85\linewidth]{图片/5级小波分解.png}
     \caption{Haar five-level wavelet decomposition reconstruction for SPPs}
     \label{fig:Haar five-level wavelet decomposition reconstruction for SPPs}
 \end{figure}
@@ -350,7 +350,7 @@ After wavelet transforming the seven  lost circulation time series features, the
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{图片/spearman相关系数.png}
+    \includegraphics[width=0.85\linewidth]{图片/spearman相关系数.png}
     \caption{Spearman correlation coefficients of specific features (e.g., SPP, MFO) before and after wavelet transformation}
     \label{fig:Spearman correlation coefficients of features before and after wavelet transformation}
 \end{figure}
@@ -363,7 +363,7 @@ The TimeGAN network constructed in this study generated the lost circulation tim
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{图片/timeGan数据生成.png}
+    \includegraphics[width=1\linewidth]{图片/timeGan数据生成.png}
     \caption{TimeGAN Generation of Lost Circulation Time Series Data}
     \label{fig:TimeGAN Generation of Lost Circulation Time Series Data}
 \end{figure}
@@ -373,7 +373,7 @@ The results subsequent to PCA and t-SNE dimensionality reduction are demonstrate
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{图片/pca tsne.png}
+    \includegraphics[width=0.95\linewidth]{图片/pca tsne.png}
     \caption{PCA and T-SNE visualisation results of generated data versus raw data}
     \label{fig:PCA and TSNE visualisation results of generated data versus raw data}
 \end{figure}
@@ -507,14 +507,14 @@ In the context of the original dataset, which exhibits a loss of circulation, bo
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{图片/综合图像.png}
+    \includegraphics[width=1\linewidth,height=0.27\textheight]{图片/综合图像.png}
     \caption{Comprehensive optimisation effect analysis}
     \label{fig:Comprehensive optimisation effect analysis}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{图片/对比效果.png}
+    \includegraphics[width=0.75\linewidth]{图片/对比效果.png}
     \caption{Comparison of the effect of different models}
     \label{fig:Comparison of the effect of different models}
 \end{figure}
