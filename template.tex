@@ -5,22 +5,22 @@
 \documentclass[journal,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
 
 
-% 若要将本稿件的早期版本作为预印本发布，可使用 “preprints ”作为期刊。发布前将 “提交 ”改为 “接受 ”将删除行号。
+% 若要将本稿件的早期版本作为预印本发布，可使用 "preprints "作为期刊。发布前将 "提交 "改为 "接受 "将删除行号。
 %----------
 % article
 %----------
 % submit
 %----------
-%论文被接受后，编辑部会将 “提交 ”类选项更改为 “接受”。这只会更改首页（例如，期刊的徽标将变得可见）、标题和版权信息。此外，行号将被删除。被录用论文的期刊信息和页码也将由编辑部指定。
+%论文被接受后，编辑部会将 "提交 "类选项更改为 "接受"。这只会更改首页（例如，期刊的徽标将变得可见）、标题和版权信息。此外，行号将被删除。被录用论文的期刊信息和页码也将由编辑部指定。
 
 %------------------
 % moreauthors
 %------------------
-% 如果只有一位作者，则应使用 “一位作者 ”类别选项。否则，应使用 “更多作者 ”类别选项。
+% 如果只有一位作者，则应使用 "一位作者 "类别选项。否则，应使用 "更多作者 "类别选项。
 %---------
 % pdftex
 %---------
-% 选项 pdftex 用于 pdfLaTeX。如果(1)使用 LaTeX 和 dvi2pdf（如果使用 eps 数字）或(2)使用 XeLaTeX 进行编译，请移除 “pdftex”。
+% 选项 pdftex 用于 pdfLaTeX。如果(1)使用 LaTeX 和 dvi2pdf（如果使用 eps 数字）或(2)使用 XeLaTeX 进行编译，请移除 "pdftex"。
 
 %=================================================================
 % MDPI internal commands - do not modify
@@ -135,7 +135,7 @@ $^{2}$ \quad School of Petroleum Engineering, China University of Petroleum, Bei
 %\addhighlights{yes}
 %\renewcommand{\addhighlights}{%
 
-%\noindent This is an obligatory section in “Advances in Respiratory Medicine”, whose goal is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple text allowing the reader to quickly and simplified find out what the article is about and what can be cited from it. Each of these parts should be devoted up to 2~bullet points.\vspace{3pt}\\
+%\noindent This is an obligatory section in "Advances in Respiratory Medicine", whose goal is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple text allowing the reader to quickly and simplified find out what the article is about and what can be cited from it. Each of these parts should be devoted up to 2~bullet points.\vspace{3pt}\\
 %\textbf{What are the main findings?}
 % \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
 % \item First bullet.
@@ -208,6 +208,10 @@ The training process of GAN is an adversarial process, where the generator and t
     \label{fig:timegan}
 \end{figure}
 
+The embedding function maps raw risk time-series data into a low-dimensional latent space, with its core objective being to capture temporal correlations and long-range dependency features in lost circulation events. The recovery function reconstructs original data or generates new samples from latent space vectors, typically forming an encoder-decoder architecture with the embedding function. The sequence generator employs adversarial training strategies to synthesize time-series data with lost circulation risk characteristics in the latent space, capturing sequence dependencies through autoregressive or parallel prediction. The sequence discriminator evaluates the authenticity of generated sequences via adversarial training or classification mechanisms, driving generator optimization through distribution matching. The embedding and recovery functions constitute an autoencoder that constrains the reversibility and compact distribution of generated data, while the generator and discriminator utilize adversarial learning to force synthetic data to approximate the statistical properties of real lost circulation time-series. This framework addresses the data scarcity issue in small-sample risk scenarios and provides high-fidelity training data for risk prediction models.
+
+
+
 The auto-coding component of TimeGAN is capable of realising the inverse mapping between feature space and potential space, and can reconstruct the data according to the potential static and temporal features of the real data. The mathematical expressions for the reconstruction loss function \({{I}_{R}}\), the unsupervised loss function \({{I}_{u}}\) and the additional supervised loss function \({{I}_{s}}\) during training are as follows.
 
 $$ I _ { R } = E _ { S , X _ { 1: T - P } } \left[ | S - \tilde { S } | | _ { 2 } + \sum _ { t } | | X _ { t } - \tilde { X } _ { t } | | _ { 2 } \right]\quad (2)$$
@@ -221,7 +225,7 @@ where \({{\widetilde{S}}}\) and \({{\widetilde{X}}_{1:T}}\) denote the static an
     \centering
     \caption{Comparison of Loss Functions: Core Functions and Technical Specifications}
     \label{tab:loss_comparison}
-    \begin{tabular}{p{3cm}p{6cm}p{6cm}}
+    \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
     \toprule
     \textbf{Loss Function} & \textbf{Core Function} & \textbf{Technical Specification} \\
     \midrule
@@ -239,7 +243,7 @@ where \({{\widetilde{S}}}\) and \({{\widetilde{X}}_{1:T}}\) denote the static an
     Constrains dynamic evolution in latent feature space ($h_S$, $h_t$), enforcing temporal generator ($g_X$) to capture time-dependent relationships &
     Enhances stability of sequential prediction through explicit supervision of latent state ($h_t$) recurrence. \\
     \bottomrule
-    \end{tabular}
+    \end{tabularx}
     \end{table}
 
 
@@ -538,7 +542,7 @@ The multi-scale fusion feature approach demonstrates superiority over optimisati
 
 \vspace{20pt} 
 
-\noindent \textbf{Disclaimer/Publisher’s Note:} The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+\noindent \textbf{Disclaimer/Publisher's Note:} The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
 
 
 \end{adjustwidth}
