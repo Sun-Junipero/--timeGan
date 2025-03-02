@@ -185,7 +185,7 @@ Wavelet Transform (WT) is a tool for analysing signals in the time and frequency
 
 where $W\psi(a, b)$ are the wavelet coefficients, $f(t)$ is the signal to be analysed, $\psi$ is the mother wavelet function, and $a$ and $b$ denote the scale and translation parameters, respectively. The scaling parameter $a$ governs the range of frequency analysis, while the translation parameter $b$ determines the temporal position within the signal.
 
-The wavelet transform method is utilised to process the original feature signal, with the signal initially decomposed into 'low frequency approximation' and 'high frequency details'. This is followed by a further decomposition of the 'low frequency approximation' and 'high frequency details' into 'low frequency approximation' and 'high frequency details'. A subsequent decomposition of the resultant part of the last decomposition is then performed into 'low-frequency approximation' and 'high-frequency details', with each part of the decomposition subdivided individually until each part of the decomposition is limited to a single point. The 'high-frequency details' part is not decomposed, and the decomposition steps are illustrated in Figure ~\ref{fig:Wavelet Transform}. The application of wavelet transform facilitates the division of the signal into multiple scales, thereby enabling the analysis of the information of the target signal in each frequency band with greater precision and facilitating a comprehensive exploration of the intrinsic law of the signal.
+The wavelet transform method is utilised to process the original feature signal, with the signal initially decomposed into low frequency approximation and high frequency details. This is followed by a further decomposition of the low frequency approximation and high frequency details into low frequency approximation and high frequency details. A subsequent decomposition of the resultant part of the last decomposition is then performed into low-frequency approximation and high-frequency details, with each part of the decomposition subdivided individually until each part of the decomposition is limited to a single point. The high-frequency details part is not decomposed, and the decomposition steps are illustrated in Figure ~\ref{fig:Wavelet Transform}. The application of wavelet transform facilitates the division of the signal into multiple scales, thereby enabling the analysis of the information of the target signal in each frequency band with greater precision and facilitating a comprehensive exploration of the intrinsic law of the signal.
 
 \begin{figure}[H]
     \centering
@@ -420,11 +420,9 @@ In a classification model, \textbf{accuracy} represents the proportion of correc
 
 In order to ascertain the efficacy of the TimeGAN model in the generation of lost circulation time-series data, this study utilises a dataset comprising over 4,700 instances of lost circulation time-series data, as previously constructed from the time-series dataset of lost circulation recordings. In order to satisfy the input requirements of the TimeGAN model, the well-loss time-series data are initially configured as time-series samples with fixed window intervals, employing the sliding window method and normalised.
 
-\subsection{Hyper-parameter optimisation}
+\subsection{Hyperparameter Configuration}
 
 In the context of training a model of this nature, there are two primary types of hyperparameter that demand attention: training hyperparameters and structural hyperparameters. The former primarily govern the model's training process, while the latter determine its structural design. 
-
-Given the vast number of hyperparameters and the wide range of values they can assume, this study employs the open-source library Optuna for the optimisation of hyperparameters. This library is a specialised open-source toolkit developed for the optimisation of hyperparameters in deep learning models. It is capable of automatically searching for the optimal hyperparameter configurations within the hyperparameter space by using Bayesian optimisation and genetic algorithms, among other methods. It is notable for its simplicity and ease of use, coupled with a high degree of flexibility, and its compatibility with mainstream deep learning models such as PyTorch and TensorFlow, TensorFlow, and other mainstream deep learning platforms.
 
 In the experiment, the native TimeGAN network in the ydata-synthetic library     based on the Python language is utilised to construct the data expansion generation model, and the primary parameter settings of the model are exhibited in Table \ref{TimeGAN parameter settings}.
 
@@ -479,7 +477,7 @@ In this study, we set \({{\lambda }_{1}}\)=0.5, \({{\lambda }_{2}}\)=0.4, \({{\l
 
 In this section, the analysis of the optimisation effect of different feature enhancement methods on the model is conducted, as well as the analysis of the optimisation effect of data expansion methods on the model. In addition, the analysis of the optimisation effect of feature enhancement combined with data expansion on the model is undertaken.
 
-\subsection{Feature enhancement effect analysis}
+\subsection{Analysis of feature enhancement effects via Wavelet Transform}
 
 As demonstrated in Figure \ref{fig:Evaluation of feature enhancement effects}, following the implementation of wavelet transform for the purpose of feature enhancement, the evaluation indexes of the model on the test set are optimised in comparison with those prior to feature enhancement. The accuracy rate is increased by 1.2\%, the precision rate by 0.4\%, the recall rate by 2.4\%, and the leakage rate and the false alarm rate are decreased by 2.4\% and 0.4\%, respectively.
 
@@ -490,7 +488,7 @@ As demonstrated in Figure \ref{fig:Evaluation of feature enhancement effects}, f
     \label{fig:Evaluation of feature enhancement effects}
 \end{figure}
 
-\subsection{Analysis of the effect of data expansion}
+\subsection{Analysis of data augmentation effectiveness via TimeGAN}
 
 As shown in the figure    \ref{fig:Analysis of the effect of data expansion} , The findings of this study demonstrate that data expansion significantly improves model performance, especially at 1x and 2x expansion. The increase in accuracy is not significant when the expansion is increased from 2x to 4x. The optimum model performance is achieved with 2x expansion. Expansion beyond 2x is difficult to achieve a full improvement with the current dataset and significantly increases model training time.
 
