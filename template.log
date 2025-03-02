@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  2 MAR 2025 08:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.25)  2 MAR 2025 09:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1284,15 +1284,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [5 <./图片/多尺度特征注意力.png (PNG copy)>]
-<图片/交叉注意力机制.png, id=193, 323.70938pt x 266.1945pt>
-File: 图片/交叉注意力机制.png Graphic file (type png)
-<use 图片/交叉注意力机制.png>
-Package pdftex.def Info: 图片/交叉注意力机制.png  used on input line 287.
-(pdftex.def)             Requested size: 295.76642pt x 243.22844pt.
-<图片/多尺度融合网络.png, id=195, 472.33607pt x 165.61874pt>
+<图片/多尺度融合网络.png, id=193, 472.33607pt x 165.61874pt>
 File: 图片/多尺度融合网络.png Graphic file (type png)
 <use 图片/多尺度融合网络.png>
-Package pdftex.def Info: 图片/多尺度融合网络.png  used on input line 296.
+Package pdftex.def Info: 图片/多尺度融合网络.png  used on input line 288.
 (pdftex.def)             Requested size: 295.76642pt x 103.71109pt.
 
 
@@ -1302,25 +1297,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[6 <./图片/交叉注意力机制.png (PNG copy)>]
-<图片/spearman.png, id=202, 445.446pt x 313.608pt>
+[6 <./图片/多尺度融合网络.png (PNG copy)>]
+<图片/spearman.png, id=200, 445.446pt x 313.608pt>
 File: 图片/spearman.png Graphic file (type png)
 <use 图片/spearman.png>
-Package pdftex.def Info: 图片/spearman.png  used on input line 317.
+Package pdftex.def Info: 图片/spearman.png  used on input line 309.
 (pdftex.def)             Requested size: 295.76642pt x 208.23087pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[7 <./图片/多尺度融合网络.png (PNG copy)> <./图片/spearman.png>]
-<图片/滑动窗口.png, id=212, 966.61125pt x 813.0375pt>
+<图片/滑动窗口.png, id=202, 966.61125pt x 813.0375pt>
 File: 图片/滑动窗口.png Graphic file (type png)
 <use 图片/滑动窗口.png>
-Package pdftex.def Info: 图片/滑动窗口.png  used on input line 337.
+Package pdftex.def Info: 图片/滑动窗口.png  used on input line 329.
 (pdftex.def)             Requested size: 295.76642pt x 248.77626pt.
 
 
@@ -1330,16 +1316,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[8 <./图片/滑动窗口.png (PNG copy)>]
-<图片/5级小波分解.png, id=219, 958.3303pt x 812.66109pt>
+[7 <./图片/spearman.png>]
+<图片/5级小波分解.png, id=212, 958.3303pt x 812.66109pt>
 File: 图片/5级小波分解.png Graphic file (type png)
 <use 图片/5级小波分解.png>
-Package pdftex.def Info: 图片/5级小波分解.png  used on input line 351.
+Package pdftex.def Info: 图片/5级小波分解.png  used on input line 343.
 (pdftex.def)             Requested size: 295.76642pt x 250.80632pt.
-<图片/spearman相关系数.png, id=221, 598.089pt x 441.066pt>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[8 <./图片/滑动窗口.png (PNG copy)>]
+<图片/spearman相关系数.png, id=219, 598.089pt x 441.066pt>
 File: 图片/spearman相关系数.png Graphic file (type png)
 <use 图片/spearman相关系数.png>
-Package pdftex.def Info: 图片/spearman相关系数.png  used on input line 360.
+Package pdftex.def Info: 图片/spearman相关系数.png  used on input line 352.
 (pdftex.def)             Requested size: 295.76642pt x 218.12306pt.
 
 
@@ -1349,25 +1344,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[9 <./图片/5级小波分解.png (PNG copy)>]
-<图片/timeGan数据生成.png, id=230, 1213.15735pt x 769.37437pt>
+[9 <./图片/5级小波分解.png (PNG copy)> <./图片/spearman相关系数.png>]
+<图片/timeGan数据生成.png, id=228, 1213.15735pt x 769.37437pt>
 File: 图片/timeGan数据生成.png Graphic file (type png)
 <use 图片/timeGan数据生成.png>
-Package pdftex.def Info: 图片/timeGan数据生成.png  used on input line 373.
+Package pdftex.def Info: 图片/timeGan数据生成.png  used on input line 365.
 (pdftex.def)             Requested size: 295.76642pt x 187.5768pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[10 <./图片/spearman相关系数.png> <./图片/timeGan数据生成.png (PNG copy)>]
-<图片/pca tsne.png, id=239, 918.43124pt x 536.0025pt>
+<图片/pca tsne.png, id=230, 918.43124pt x 536.0025pt>
 File: 图片/pca tsne.png Graphic file (type png)
 <use 图片/pca tsne.png>
-Package pdftex.def Info: 图片/pca tsne.png  used on input line 383.
+Package pdftex.def Info: 图片/pca tsne.png  used on input line 375.
 (pdftex.def)             Requested size: 295.76642pt x 172.61208pt.
 
 
@@ -1377,7 +1363,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[11 <./图片/pca tsne.png (PNG copy)>]
+[10 <./图片/timeGan数据生成.png (PNG copy)> <./图片/pca tsne.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[11]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1386,24 +1380,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [12]
-<图片/特征增强.png, id=256, 504.138pt x 326.967pt>
+<图片/特征增强.png, id=253, 504.138pt x 326.967pt>
 File: 图片/特征增强.png Graphic file (type png)
 <use 图片/特征增强.png>
-Package pdftex.def Info: 图片/特征增强.png  used on input line 492.
+Package pdftex.def Info: 图片/特征增强.png  used on input line 484.
 (pdftex.def)             Requested size: 295.76642pt x 191.82622pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 16.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
-
-[13]
-<图片/数据扩充.png, id=264, 458.586pt x 313.827pt>
+<图片/数据扩充.png, id=255, 458.586pt x 313.827pt>
 File: 图片/数据扩充.png Graphic file (type png)
 <use 图片/数据扩充.png>
-Package pdftex.def Info: 图片/数据扩充.png  used on input line 503.
+Package pdftex.def Info: 图片/数据扩充.png  used on input line 495.
 (pdftex.def)             Requested size: 295.76642pt x 202.40967pt.
 
 
@@ -1413,13 +1398,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[14 <./图片/特征增强.png> <./图片/数据扩充.png>]
-<图片/综合图像.png, id=275, 866.364pt x 322.149pt>
+[13 <./图片/特征增强.png>]
+<图片/综合图像.png, id=266, 866.364pt x 322.149pt>
 File: 图片/综合图像.png Graphic file (type png)
 <use 图片/综合图像.png>
-Package pdftex.def Info: 图片/综合图像.png  used on input line 516.
+Package pdftex.def Info: 图片/综合图像.png  used on input line 508.
 (pdftex.def)             Requested size: 394.35522pt x 146.63701pt.
- (./template.bbl
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1427,7 +1412,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
-[15 <./图片/综合图像.png>])
+[14 <./图片/数据扩充.png> <./图片/综合图像.png>] (./template.bbl)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 16.18796pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.18796pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
+
+[15]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 16.18796pt, for example:
@@ -1446,18 +1439,18 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 18236A7A2A6B050299D7DC9590EEDEC5;4094.
  ) 
 Here is how much of TeX's memory you used:
- 34029 strings out of 476023
- 637972 string characters out of 5790926
+ 34019 strings out of 476023
+ 637616 string characters out of 5790926
  1963190 words of memory out of 5000000
- 55023 multiletter control sequences out of 15000+600000
+ 55014 multiletter control sequences out of 15000+600000
  634368 words of font info for 418 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 123i,14n,126p,2837b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,14n,126p,2837b,595s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (16 pages, 4963461 bytes).
+Output written on template.pdf (16 pages, 4917632 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 95496 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 95491 words of extra memory for PDF output out of 106986 (max. 10000000)
 
